@@ -17,7 +17,6 @@ import ExploreEstate from './pages/ExploreEstate';
 import Products from './pages/Products';
 import Journal from './pages/Journal';
 import Visit from './pages/Visit';
-import Contact from './pages/Contact';
 
 function MainLayout() {
   const location = useLocation();
