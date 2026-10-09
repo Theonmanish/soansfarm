@@ -42,7 +42,6 @@ function MainLayout() {
           <Route path="/products" element={<Products />} />
           <Route path="/journal" element={<Journal />} />
           <Route path="/visit" element={<Visit />} />
-          <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>
 
