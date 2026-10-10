@@ -32,9 +32,7 @@ export default function TheLand() {
           <EditorialBlock
             title="Terrain Adaptation & Contours"
             lead="The landscape is defined by gentle slopes, hillocks, and natural drainage paths characteristic of the coastal Karnataka hinterland."
-            body={[
-              "Rather than flattening the terrain, agricultural plots and crop terraces adapt to the natural slope, enabling effective rainwater management and soil preservation across seasons."
-            ]}
+            
             imageTitle="Hilly Landscape Contour"
             imageCaption="Topographical elevation visual record of the Moodbidri region."
           />

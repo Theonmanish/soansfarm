@@ -21,13 +21,16 @@ export default function Home() {
           <div className="hero-text-wrapper">
             <span className="tag-label">ESTATE OVERVIEW</span>
             <h1 className="hero-main-title">SOANS FARM</h1>
-            <p className="lead hero-intro-statement">
+            <p className="hero-intro-statement">
+              A World Of Horticultural And Botanical Diversity
+            </p>
+            <p className="lead">
               A long-established agricultural estate, horticultural collection, and diverse cultivated landscape in coastal Karnataka.
             </p>
 
-            
 
-            
+
+
           </div>
         </div>
       </section>
@@ -206,7 +209,7 @@ export default function Home() {
                   className="btn-editorial btn-gold"
                 >
                   <span>EXPLORE PLANT CATALOGUE</span>
-                  
+
                 </a>
               </div>
             </div>
@@ -232,9 +235,9 @@ export default function Home() {
             </div>
 
             <div className="exp-block-seamless">
-              <PlaceholderImage aspectRatio="16-9" title="Walking Labyrinths" category="REFLECTIVE ARCHITECTURE" />
+              <PlaceholderImage aspectRatio="16-9" title="Labyrinth" category="REFLECTIVE ARCHITECTURE" />
               <div className="seamless-body">
-                <h4>Walking Labyrinths</h4>
+                <h4>Labyrinth</h4>
                 <p>Distinctive Cretan and French cathedral design single-path labyrinths for concentration.</p>
               </div>
             </div>
@@ -262,196 +265,196 @@ export default function Home() {
             rel="noopener noreferrer"
             className="btn-editorial btn-gold"
           >
-            
+
             <span>ENTER TOUR.SOANSFARM.IN</span>
-            
+
           </a>
         </div>
       </section>
 
       {/* 9. CONTACT SECTION */}
-      
-<section className="section" id="contact">
-  <div className="container">
-    <SectionHeading
-      number="07. CONTACT"
-      title="VISIT SOANS FARM"
-    />
 
-    <div className="editorial-grid grid-3">
-      {/* Instagram */}
-      <div className="journal-block-seamless">
-        <div style={{ padding: '1.25rem 0' }}>
-          <span
-            style={{
-              fontSize: '0.7rem',
-              color: 'var(--text-gold)',
-              letterSpacing: '0.15em'
-            }}
-          >
-            SOCIAL
-          </span>
+      <section className="section" id="contact">
+        <div className="container">
+          <SectionHeading
+            number="07. CONTACT"
+            title="VISIT SOANS FARM"
+          />
 
-          <h4 style={{ margin: '0.75rem 0' }}>
-            Instagram
-          </h4>
+          <div className="editorial-grid grid-3">
+            {/* Instagram */}
+            <div className="journal-block-seamless">
+              <div style={{ padding: '1.25rem 0' }}>
+                <span
+                  style={{
+                    fontSize: '0.7rem',
+                    color: 'var(--text-gold)',
+                    letterSpacing: '0.15em'
+                  }}
+                >
+                  SOCIAL
+                </span>
 
-          <p
-            style={{
-              fontSize: '0.9rem',
-              color: 'var(--text-secondary)',
-              marginBottom: '1rem'
-            }}
-          >
-            Follow Soans Farm for updates from the estate.
-          </p>
+                <h4 style={{ margin: '0.75rem 0' }}>
+                  Instagram
+                </h4>
 
-          <a
-            href="https://www.instagram.com/soansfarm?xtok=MXZkOGx0bHN1MHQ1NQ%3D%3D"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{
-              color: 'var(--text-gold)',
-              fontSize: '0.85rem',
-              letterSpacing: '0.05em',
-              textDecoration: 'none'
-            }}
-          >
-            @soansfarm ↗
-          </a>
-        </div>
-      </div>
+                <p
+                  style={{
+                    fontSize: '0.9rem',
+                    color: 'var(--text-secondary)',
+                    marginBottom: '1rem'
+                  }}
+                >
+                  Follow Soans Farm for updates from the estate.
+                </p>
 
-      {/* Phone */}
-      <div className="journal-block-seamless">
-        <div style={{ padding: '1.25rem 0' }}>
-          <span
-            style={{
-              fontSize: '0.7rem',
-              color: 'var(--text-gold)',
-              letterSpacing: '0.15em'
-            }}
-          >
-            ENQUIRIES
-          </span>
+                <a
+                  href="https://www.instagram.com/soansfarm?xtok=MXZkOGx0bHN1MHQ1NQ%3D%3D"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    color: 'var(--text-gold)',
+                    fontSize: '0.85rem',
+                    letterSpacing: '0.05em',
+                    textDecoration: 'none'
+                  }}
+                >
+                  @soansfarm ↗
+                </a>
+              </div>
+            </div>
 
-          <h4 style={{ margin: '0.75rem 0' }}>
-            Get in Touch
-          </h4>
+            {/* Phone */}
+            <div className="journal-block-seamless">
+              <div style={{ padding: '1.25rem 0' }}>
+                <span
+                  style={{
+                    fontSize: '0.7rem',
+                    color: 'var(--text-gold)',
+                    letterSpacing: '0.15em'
+                  }}
+                >
+                  ENQUIRIES
+                </span>
 
-          <p
-            style={{
-              fontSize: '0.9rem',
-              color: 'var(--text-secondary)',
-              marginBottom: '1rem'
-            }}
-          >
-            Contact us for enquiries and further information.
-          </p>
+                <h4 style={{ margin: '0.75rem 0' }}>
+                  Get in Touch
+                </h4>
 
+                <p
+                  style={{
+                    fontSize: '0.9rem',
+                    color: 'var(--text-secondary)',
+                    marginBottom: '1rem'
+                  }}
+                >
+                  Contact us for enquiries and further information.
+                </p>
+
+                <div
+                  style={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    gap: '0.75rem'
+                  }}
+                >
+                  <a
+                    href="tel:9449836361"
+                    style={{
+                      color: 'var(--text-primary)',
+                      fontSize: '0.95rem',
+                      textDecoration: 'none'
+                    }}
+                  >
+                    +91 94498 36361
+                  </a>
+
+                  <a
+                    href="tel:9902331561"
+                    style={{
+                      color: 'var(--text-primary)',
+                      fontSize: '0.95rem',
+                      textDecoration: 'none'
+                    }}
+                  >
+                    +91 99023 31561
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Location */}
+            <div className="journal-block-seamless">
+              <div style={{ padding: '1.25rem 0' }}>
+                <span
+                  style={{
+                    fontSize: '0.7rem',
+                    color: 'var(--text-gold)',
+                    letterSpacing: '0.15em'
+                  }}
+                >
+                  LOCATION
+                </span>
+
+                <h4 style={{ margin: '0.75rem 0' }}>
+                  Soans Farm
+                </h4>
+
+                <p
+                  style={{
+                    fontSize: '0.9rem',
+                    color: 'var(--text-secondary)',
+                    marginBottom: '1rem'
+                  }}
+                >
+                  Moodbidri, Karnataka, India
+                </p>
+
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=Soans+Farm+Moodbidri"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    color: 'var(--text-gold)',
+                    fontSize: '0.85rem',
+                    textDecoration: 'none'
+                  }}
+                >
+                  Get Directions ↗
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Google Maps Embed */}
           <div
             style={{
-              display: 'flex',
-              flexDirection: 'column',
-              gap: '0.75rem'
+              marginTop: '3rem',
+              width: '100%',
+              overflow: 'hidden',
+              border: '1px solid rgba(234, 228, 216, 0.12)',
+              borderRadius: '8px',
+              background: 'var(--surface, #111311)'
             }}
           >
-            <a
-              href="tel:9449836361"
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.004856101571!2d75.00020590000001!3d13.098878600000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbb5532d0a50835%3A0x4fca633a88c45486!2sSoans%20Farm!5e0!3m2!1sen!2sin!4v1791568059436!5m2!1sen!2sin"
+              title="Find Soans Farm on Google Maps"
+              width="100%"
+              height="420"
               style={{
-                color: 'var(--text-primary)',
-                fontSize: '0.95rem',
-                textDecoration: 'none'
+                display: 'block',
+                border: 0,
+                filter: 'grayscale(100%) contrast(0.95)'
               }}
-            >
-              +91 94498 36361
-            </a>
-
-            <a
-              href="tel:9902331561"
-              style={{
-                color: 'var(--text-primary)',
-                fontSize: '0.95rem',
-                textDecoration: 'none'
-              }}
-            >
-              +91 99023 31561
-            </a>
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="strict-origin-when-cross-origin"
+            />
           </div>
         </div>
-      </div>
-
-      {/* Location */}
-      <div className="journal-block-seamless">
-        <div style={{ padding: '1.25rem 0' }}>
-          <span
-            style={{
-              fontSize: '0.7rem',
-              color: 'var(--text-gold)',
-              letterSpacing: '0.15em'
-            }}
-          >
-            LOCATION
-          </span>
-
-          <h4 style={{ margin: '0.75rem 0' }}>
-            Soans Farm
-          </h4>
-
-          <p
-            style={{
-              fontSize: '0.9rem',
-              color: 'var(--text-secondary)',
-              marginBottom: '1rem'
-            }}
-          >
-            Moodbidri, Karnataka, India
-          </p>
-
-          <a
-            href="https://www.google.com/maps/search/?api=1&query=Soans+Farm+Moodbidri"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{
-              color: 'var(--text-gold)',
-              fontSize: '0.85rem',
-              textDecoration: 'none'
-            }}
-          >
-            Get Directions ↗
-          </a>
-        </div>
-      </div>
-    </div>
-
-    {/* Google Maps Embed */}
-    <div
-      style={{
-        marginTop: '3rem',
-        width: '100%',
-        overflow: 'hidden',
-        border: '1px solid rgba(234, 228, 216, 0.12)',
-        borderRadius: '8px',
-        background: 'var(--surface, #111311)'
-      }}
-    >
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.004856101571!2d75.00020590000001!3d13.098878600000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbb5532d0a50835%3A0x4fca633a88c45486!2sSoans%20Farm!5e0!3m2!1sen!2sin!4v1791568059436!5m2!1sen!2sin"
-        title="Find Soans Farm on Google Maps"
-        width="100%"
-        height="420"
-        style={{
-          display: 'block',
-          border: 0,
-          filter: 'grayscale(100%) contrast(0.95)'
-        }}
-        allowFullScreen
-        loading="lazy"
-        referrerPolicy="strict-origin-when-cross-origin"
-      />
-    </div>
-  </div>
-</section>
+      </section>
 
       <style>{`
         .home-hero {
@@ -539,6 +542,15 @@ export default function Home() {
           flex-direction: column;
           align-items: center;
         }
+          .hero-intro-statement {
+          color: #B99868;
+          font-weight: 400;
+          letter-spacing: 0.04em;
+}
+
+        
+
+
       `}</style>
     </div>
   );
