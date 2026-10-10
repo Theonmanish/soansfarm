@@ -2,7 +2,6 @@ import React from 'react';
 import PageHero from '../components/PageHero';
 import SectionHeading from '../components/SectionHeading';
 import JournalPreview from '../components/JournalPreview';
-import PlaceholderImage from '../components/PlaceholderImage';
 
 export default function Journal() {
   const journalArticles = [
@@ -11,47 +10,45 @@ export default function Journal() {
       date: 'OCTOBER 2026',
       title: 'Structural Architecture of Giant & Yellow Bamboo Varieties',
       excerpt: 'Examining canopy density, pathway shading, and clump propagation across estate bamboo groves in coastal Karnataka.',
-      imageTitle: 'Bamboo Architectural Study'
+      imageSrc: '/bamboo1.jpg',
+      imageAlt: 'Bamboo grove at Soans Farm',
     },
     {
       category: 'AGRICULTURAL HISTORY',
       date: 'SEPTEMBER 2026',
       title: 'Basel Mission Agricultural Initiatives & Hilly Land Reclamation',
       excerpt: 'Archival notes on early 20th century land transformation and systematic crop selection under Alfred Soans.',
-      imageTitle: 'Archival Historical Document'
     },
     {
       category: 'HORTICULTURE',
       date: 'AUGUST 2026',
       title: 'Cauliflory in Understory Cocoa Cultivation',
       excerpt: 'Observing floral pod emergence directly from trunks and primary branches beneath plantation shade canopies.',
-      imageTitle: 'Cauliflorous Cocoa Study'
     },
     {
       category: 'CLIMATE & HYDROLOGY',
       date: 'JULY 2026',
       title: 'Monsoonal Rainfall Patterns & Soil Water Retention',
       excerpt: 'Adapting multi-tier crop arrangements to intense southwest monsoon precipitation in rolling coastal terrain.',
-      imageTitle: 'Monsoon Hydrology Field Study'
     },
     {
       category: 'LANDSCAPE ARCHITECTURE',
       date: 'JUNE 2026',
       title: 'Geometry & Concentric Paths in French Cathedral Labyrinths',
       excerpt: 'Exploring single-continuous pathway design and quiet concentration spaces within working agricultural grounds.',
-      imageTitle: 'Labyrinth Geometric Plan'
+      imageSrc: '/labyrinth.jpg',
+      imageAlt: 'Labyrinth path at Soans Farm',
     },
     {
       category: 'FRUIT SPECIES RECORD',
       date: 'MAY 2026',
       title: 'Documenting Exotic Tropical Fruit Adaptation',
       excerpt: 'Field notes on rambutan, mangosteen, jaboticaba, and miracle fruit species introduced over decades of plant study.',
-      imageTitle: 'Exotic Fruit Specimen Field Note'
     }
   ];
 
   return (
-    <div className="journal-page">
+    <div>
       {/* Page Hero Header */}
       <PageHero
         category="EDITORIAL ARCHIVE"
@@ -67,62 +64,52 @@ export default function Journal() {
       />
 
       {/* 01. FEATURED ARTICLE */}
-      <section className="section">
-        <div className="container">
+      <section className="relative border-b border-farm-border py-16 md:py-[110px]">
+        <div className="mx-auto w-[90%] max-w-[1400px]">
           <SectionHeading
             number="01. FEATURED RECORD"
             title="Primary Journal Entry"
             subtitle="Highlighted archival document"
           />
-          <div className="featured-article-card">
-            <div className="editorial-grid grid-asymmetric-left">
-              <div className="featured-text">
-                <span className="tag-label">FEATURED BOTANICAL RECORD</span>
-                <span className="pub-date">OCTOBER 2026 ▪ MOODBIDRI ARCHIVE</span>
-                <h2 className="featured-title">Decades of Tropical Fruit Species Experimentation</h2>
-                <p className="lead" style={{ margin: '1rem 0 1.5rem' }}>
+          <div className="border border-farm-border bg-farm-card p-7 md:p-10">
+            <div className="max-w-4xl">
+                <span className="mb-5 inline-flex items-center gap-3 font-body text-xs uppercase tracking-[0.2em] text-farm-gold before:inline-block before:h-px before:w-6 before:bg-farm-gold">FEATURED BOTANICAL RECORD</span>
+                <span className="mb-2 block text-[0.7rem] tracking-[0.15em] text-farm-muted">OCTOBER 2026 ▪ MOODBIDRI ARCHIVE</span>
+                <h2 className="mb-3 font-editorial text-[2.4rem] text-farm-cream">Decades of Tropical Fruit Species Experimentation</h2>
+                <p className="my-4 mb-6 text-[clamp(1.15rem,1.8vw,1.35rem)] font-light leading-relaxed text-farm-cream">
                   An editorial summary of Dr. L. C. Soans's long-term study into uncommon tropical fruit trees, nursery propagation, and climate adaptation in coastal Karnataka.
                 </p>
-                <span className="text-link">READ FULL ARCHIVAL ENTRY</span>
+                <span className="inline-flex items-center gap-2 border-b border-farm-border-gold pb-1 font-body text-sm uppercase tracking-[0.15em] text-farm-gold transition-colors hover:border-farm-cream hover:text-farm-cream">READ FULL ARCHIVAL ENTRY</span>
               </div>
-              <div className="featured-visual">
-                <PlaceholderImage
-                  aspectRatio="16-9"
-                  title="Tropical Fruit Study Record"
-                  category="FEATURED ARCHIVE"
-                  caption="Documented botanical specimen archive."
-                />
-              </div>
-            </div>
           </div>
         </div>
       </section>
 
       {/* 02. CATEGORIES FILTER SHELL */}
-      <section className="section section-surface" style={{ padding: '40px 0' }}>
-        <div className="container">
-          <div className="categories-filter-bar">
-            <span className="filter-label">FILTER ARCHIVE:</span>
-            <div className="filter-buttons">
-              <button className="cat-btn active">ALL RECORDS</button>
-              <button className="cat-btn">BOTANICAL OBSERVATIONS</button>
-              <button className="cat-btn">AGRICULTURAL HISTORY</button>
-              <button className="cat-btn">HORTICULTURE</button>
-              <button className="cat-btn">CLIMATE & HYDROLOGY</button>
+      <section className="relative border-b border-farm-border bg-farm-surface py-10">
+        <div className="mx-auto w-[90%] max-w-[1400px]">
+          <div className="flex flex-col items-start gap-6 md:flex-row md:items-center">
+            <span className="text-[0.7rem] tracking-[0.2em] text-farm-gold">FILTER ARCHIVE:</span>
+            <div className="flex flex-wrap gap-2">
+              <button className="cursor-pointer border border-farm-gold bg-farm-gold/5 px-3 py-2 text-[0.7rem] tracking-[0.12em] text-farm-gold">ALL RECORDS</button>
+              <button className="cursor-pointer border border-farm-border bg-transparent px-3 py-2 text-[0.7rem] tracking-[0.12em] text-farm-stone">BOTANICAL OBSERVATIONS</button>
+              <button className="cursor-pointer border border-farm-border bg-transparent px-3 py-2 text-[0.7rem] tracking-[0.12em] text-farm-stone">AGRICULTURAL HISTORY</button>
+              <button className="cursor-pointer border border-farm-border bg-transparent px-3 py-2 text-[0.7rem] tracking-[0.12em] text-farm-stone">HORTICULTURE</button>
+              <button className="cursor-pointer border border-farm-border bg-transparent px-3 py-2 text-[0.7rem] tracking-[0.12em] text-farm-stone">CLIMATE & HYDROLOGY</button>
             </div>
           </div>
         </div>
       </section>
 
       {/* 03. ARTICLE GRID */}
-      <section className="section">
-        <div className="container">
+      <section className="relative border-b border-farm-border py-16 md:py-[110px]">
+        <div className="mx-auto w-[90%] max-w-[1400px]">
           <SectionHeading
             number="02. ARCHIVE GRID"
             title="Recent Journal Entries"
             subtitle="Documented field observations & notes"
           />
-          <div className="editorial-grid grid-3">
+          <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
             {journalArticles.map((article, idx) => (
               <JournalPreview
                 key={idx}
@@ -130,76 +117,14 @@ export default function Journal() {
                 date={article.date}
                 title={article.title}
                 excerpt={article.excerpt}
-                imageTitle={article.imageTitle}
+                imageSrc={article.imageSrc}
+                imageAlt={article.imageAlt}
               />
             ))}
           </div>
         </div>
       </section>
 
-      <style>{`
-        .featured-article-card {
-          background-color: var(--bg-card);
-          border: 1px solid var(--border-subtle);
-          padding: 2.5rem;
-        }
-
-        .pub-date {
-          font-size: 0.7rem;
-          letter-spacing: 0.15em;
-          color: var(--text-muted);
-          display: block;
-          margin-bottom: 0.5rem;
-        }
-
-        .featured-title {
-          font-family: var(--font-serif);
-          font-size: 2.4rem;
-          margin-bottom: 0.75rem;
-          color: var(--text-primary);
-        }
-
-        .categories-filter-bar {
-          display: flex;
-          align-items: center;
-          gap: 1.5rem;
-        }
-
-        .filter-label {
-          font-size: 0.7rem;
-          letter-spacing: 0.2em;
-          color: var(--text-gold);
-        }
-
-        .filter-buttons {
-          display: flex;
-          flex-wrap: wrap;
-          gap: 0.5rem;
-        }
-
-        .cat-btn {
-          background: none;
-          border: 1px solid var(--border-subtle);
-          color: var(--text-secondary);
-          padding: 0.4rem 0.8rem;
-          font-size: 0.7rem;
-          letter-spacing: 0.12em;
-          cursor: pointer;
-        }
-
-        .cat-btn.active {
-          border-color: var(--text-gold);
-          color: var(--text-gold);
-          background-color: var(--bg-accent-subtle);
-        }
-
-        @media (max-width: 768px) {
-          .categories-filter-bar {
-            flex-direction: column;
-            align-items: flex-start;
-          }
-        }
-      `}</style>
     </div>
   );
 }

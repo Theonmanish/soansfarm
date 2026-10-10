@@ -4,7 +4,6 @@ import { ChevronRight } from 'lucide-react';
 import PageHero from '../components/PageHero';
 import SectionHeading from '../components/SectionHeading';
 import ExperienceFeature from '../components/ExperienceFeature';
-import FullWidthImageSection from '../components/FullWidthImageSection';
 
 export default function Experiences() {
   const expList = [
@@ -18,7 +17,6 @@ export default function Experiences() {
         'Direct observation of multi-tier canopy agriculture',
         'Seasonal fruit tree observation zones'
       ],
-      imageTitle: 'Farm Pathway Visual'
     },
     {
       num: '02',
@@ -30,7 +28,6 @@ export default function Experiences() {
         'Shade-grown cocoa understory observation',
         'Areca nut palm row pathways'
       ],
-      imageTitle: 'Plantation Field Walk'
     },
     {
       num: '03',
@@ -42,7 +39,6 @@ export default function Experiences() {
         'Diverse bamboo species grove paths',
         'Medicinal herb & nursery propagation areas'
       ],
-      imageTitle: 'Botanical Collection Walk'
     },
     
     {
@@ -55,12 +51,11 @@ export default function Experiences() {
         'Multi-crop farming technique demonstrations',
         'Botanical collection taxonomy study'
       ],
-      imageTitle: 'Educational Learning Walk'
     }
   ];
 
   return (
-    <div className="experiences-page">
+    <div>
       {/* Page Hero Header */}
       <PageHero
         category="FARM VISITS & DISCOVERY"
@@ -76,8 +71,8 @@ export default function Experiences() {
       />
 
       {/* 01. EXPERIENCES LIST */}
-      <section className="section">
-        <div className="container">
+      <section className="relative border-b border-farm-border py-16 md:py-[110px]">
+        <div className="mx-auto w-[90%] max-w-[1400px]">
           <SectionHeading
             number="01. ELEMENTS"
             title="Distinctive farm Visitor Elements"
@@ -91,33 +86,26 @@ export default function Experiences() {
               subtitle={item.subtitle}
               description={item.description}
               highlights={item.highlights}
-              imageTitle={item.imageTitle}
             />
           ))}
         </div>
       </section>
 
       {/* 02. CLOSING SECTION */}
-      <section className="section section-surface text-center-wrapper">
-        <div className="container" style={{ maxWidth: '720px', margin: '0 auto', textAlign: 'center' }}>
-          <span className="tag-label">VISITOR GUIDELINES</span>
+      <section className="relative border-b border-farm-border bg-farm-surface py-16 md:py-[110px]">
+        <div className="mx-auto w-[90%] max-w-[720px] text-center">
+          <span className="mb-5 inline-flex items-center gap-3 font-body text-xs uppercase tracking-[0.2em] text-farm-gold before:inline-block before:h-px before:w-6 before:bg-farm-gold">VISITOR GUIDELINES</span>
           <h2>Plan Your farm Visit</h2>
-          <p className="lead" style={{ margin: '1rem 0 2rem' }}>
+          <p className="my-4 mb-8 text-[clamp(1.15rem,1.8vw,1.35rem)] font-light leading-relaxed text-farm-cream">
             Review practical information and location context for visiting Soans Farm in coastal Karnataka.
           </p>
-          <Link to="/visit" className="btn-editorial">
+          <Link to="/visit" className="inline-flex items-center gap-3 border border-farm-border-medium px-7 py-3.5 text-sm uppercase tracking-[0.15em] text-farm-cream transition-all hover:border-farm-gold hover:bg-farm-gold/5 hover:text-farm-gold">
             <span>READ VISITOR INFORMATION</span>
             <ChevronRight size={14} />
           </Link>
         </div>
       </section>
 
-      {/* CLOSING VISUAL SECTION */}
-      <FullWidthImageSection
-        title="farm Pathway Landscape Visual"
-        category="EXPERIENCE ARCHIVE"
-        caption="Shaded walking pathway through farm bamboo and plantation canopy."
-      />
     </div>
   );
 }

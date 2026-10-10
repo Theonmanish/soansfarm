@@ -2,7 +2,6 @@ import React from 'react';
 import PageHero from '../components/PageHero';
 import SectionHeading from '../components/SectionHeading';
 import CropPlantFeature from '../components/CropPlantFeature';
-import FullWidthImageSection from '../components/FullWidthImageSection';
 
 export default function Products() {
   const productOutput = [
@@ -14,8 +13,6 @@ export default function Products() {
         { label: 'Harvest Availability', value: 'Seasonal rotation' },
         { label: 'Primary Crop', value: 'Pineapple' }
       ],
-      imageTitle: 'Fresh Pineapple Produce',
-      imageCaption: 'Harvested estate pineapple produce.'
     },
     {
       name: 'Farm Fresh Pineapple Juice',
@@ -25,8 +22,6 @@ export default function Products() {
         { label: 'Source', value: '100% Estate-grown pineapple harvest' },
         { label: 'Character', value: 'Freshly extracted estate juice' }
       ],
-      imageTitle: 'Estate Pineapple Juice',
-      imageCaption: 'Freshly extracted estate pineapple juice.'
     },
     {
       name: 'Documented Estate Spices',
@@ -36,8 +31,6 @@ export default function Products() {
         { label: 'Cultivation', value: 'Integrated canopy shade growing' },
         { label: 'Varieties', value: 'Pepper, Nutmeg, Cinnamon, Clove, Vanilla' }
       ],
-      imageTitle: 'Estate Spice Collection',
-      imageCaption: 'Harvested spices visual placeholder.'
     },
     {
       name: 'Nursery Plants & Planting Material',
@@ -47,13 +40,11 @@ export default function Products() {
         { label: 'Plant Types', value: 'Fruit saplings, Bamboo clumps, Medicinal herbs' },
         { label: 'Availability', value: 'Varies by propagation season' }
       ],
-      imageTitle: 'Horticultural Nursery Material',
-      imageCaption: 'Nursery sapling propagation beds.'
     }
   ];
 
   return (
-    <div className="products-page">
+    <div>
       {/* Page Hero Header */}
       <PageHero
         category="AGRICULTURAL OUTPUT"
@@ -69,14 +60,14 @@ export default function Products() {
       />
 
       {/* 01. PRODUCTS LIST */}
-      <section className="section">
-        <div className="container">
+      <section className="relative border-b border-farm-border py-16 md:py-[110px]">
+        <div className="mx-auto w-[90%] max-w-[1400px]">
           <SectionHeading
             number="01. YIELD OVERVIEW"
             title="Estate Produce & Output"
             subtitle="Agricultural output generated across estate cultivation zones"
           />
-          <div className="editorial-grid grid-2">
+          <div className="grid grid-cols-1 gap-10 lg:grid-cols-2">
             {productOutput.map((item, idx) => (
               <CropPlantFeature
                 key={idx}
@@ -84,8 +75,6 @@ export default function Products() {
                 category={item.category}
                 description={item.description}
                 specs={item.specs}
-                imageTitle={item.imageTitle}
-                imageCaption={item.imageCaption}
               />
             ))}
           </div>
@@ -93,33 +82,19 @@ export default function Products() {
       </section>
 
       {/* 02. AGRICULTURAL INQUIRIES */}
-      <section className="section section-surface">
-        <div className="container">
-          <div className="product-inquiry-box">
-            <span className="tag-label">AGRICULTURAL INQUIRIES</span>
+      <section className="relative border-b border-farm-border bg-farm-surface py-16 md:py-[110px]">
+        <div className="mx-auto w-[90%] max-w-[1400px]">
+          <div className="border border-farm-border bg-farm-card p-8 md:p-12">
+            <span className="mb-5 inline-flex items-center gap-3 font-body text-xs uppercase tracking-[0.2em] text-farm-gold before:inline-block before:h-px before:w-6 before:bg-farm-gold">AGRICULTURAL INQUIRIES</span>
             <h3>Seasonal Produce & Nursery Plant Inquiries</h3>
-            <p className="lead" style={{ maxWidth: '780px', margin: '0.75rem 0 1.5rem' }}>
+            <p className="mb-6 mt-3 max-w-[780px] text-[clamp(1.15rem,1.8vw,1.35rem)] font-light leading-relaxed text-farm-cream">
               Current availability of fresh produce, spices, and nursery planting material varies according to monsoons and harvest seasons.
             </p>
-            <span className="text-link">INQUIRE ABOUT SEASONAL HARVEST</span>
+            <span className="inline-flex items-center gap-2 border-b border-farm-border-gold pb-1 font-body text-sm uppercase tracking-[0.15em] text-farm-gold transition-colors hover:border-farm-cream hover:text-farm-cream">INQUIRE ABOUT SEASONAL HARVEST</span>
           </div>
         </div>
       </section>
 
-      {/* CLOSING VISUAL SECTION */}
-      <FullWidthImageSection
-        title="Harvest & Nursery Visual — Soans Estate"
-        category="AGRICULTURAL ARCHIVE"
-        caption="Visual record placeholder of nursery saplings and farm harvest output."
-      />
-
-      <style>{`
-        .product-inquiry-box {
-          background-color: var(--bg-card);
-          border: 1px solid var(--border-subtle);
-          padding: 3rem;
-        }
-      `}</style>
     </div>
   );
 }

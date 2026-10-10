@@ -1,29 +1,24 @@
 import React from 'react';
-import PlaceholderImage from './PlaceholderImage';
+import ImageFigure from './ImageFigure';
 
 export default function FullWidthImageSection({
-  title = 'Estate Visual Landscape',
-  category = 'ARCHIVAL PHOTOGRAPHY',
-  caption = 'Panoramic view of cultivated landscape and architectural canopy.',
+  imageSrc = '',
+  imageAlt = '',
+  caption = '',
   aspectRatio = '21-9'
 }) {
+  if (!imageSrc) return null;
+
   return (
-    <div className="full-width-image-section">
-      <div className="container">
-        <PlaceholderImage
+    <div className="border-b border-farm-border py-10">
+      <div className="mx-auto w-[90%] max-w-[1400px]">
+        <ImageFigure
+          src={imageSrc}
+          alt={imageAlt}
           aspectRatio={aspectRatio}
-          title={title}
-          category={category}
           caption={caption}
         />
       </div>
-
-      <style>{`
-        .full-width-image-section {
-          padding: 40px 0;
-          border-bottom: 1px solid var(--border-subtle);
-        }
-      `}</style>
     </div>
   );
 }

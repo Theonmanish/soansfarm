@@ -3,7 +3,6 @@ import PageHero from '../components/PageHero';
 import SectionHeading from '../components/SectionHeading';
 import EditorialBlock from '../components/EditorialBlock';
 import ImageGrid from '../components/ImageGrid';
-import FullWidthImageSection from '../components/FullWidthImageSection';
 
 export default function BotanicalGarden() {
   const notablePlants = [
@@ -46,7 +45,7 @@ export default function BotanicalGarden() {
   ];
 
   return (
-    <div className="botanical-garden-page">
+    <div>
       {/* Page Hero Header */}
       <PageHero
         category="BOTANICAL COLLECTION"
@@ -62,8 +61,8 @@ export default function BotanicalGarden() {
       />
 
       {/* 01. DEVELOPMENT & PURPOSE */}
-      <section className="section">
-        <div className="container">
+      <section className="relative border-b border-farm-border py-16 md:py-[110px]">
+        <div className="mx-auto w-[90%] max-w-[1400px]">
           <SectionHeading
             number="01. DEVELOPMENT"
             title="Development & Purpose of the Collection"
@@ -76,15 +75,13 @@ export default function BotanicalGarden() {
               "It supports ongoing agricultural experimentation, preserves unusual tropical plants, provides fruit and plantation crops, develops nursery material, and serves as an informal setting for botanical observation and learning.",
               "Rather than a formal manicured public park, the collection exists organically within the working agricultural framework."
             ]}
-            imageTitle="Botanical Archive Record"
-            imageCaption="Visual study of tropical plant canopy and foliage diversity."
           />
         </div>
       </section>
 
       {/* 02. NOTABLE PLANT GROUPS */}
-      <section className="section section-surface">
-        <div className="container">
+      <section className="relative border-b border-farm-border bg-farm-surface py-16 md:py-[110px]">
+        <div className="mx-auto w-[90%] max-w-[1400px]">
           <SectionHeading
             number="02. NOTABLE SPECIMENS"
             title="Notable Plant Groups & Rare Species"
@@ -95,8 +92,8 @@ export default function BotanicalGarden() {
       </section>
 
       {/* 03. EDUCATIONAL CHARACTER */}
-      <section className="section">
-        <div className="container">
+      <section className="relative border-b border-farm-border py-16 md:py-[110px]">
+        <div className="mx-auto w-[90%] max-w-[1400px]">
           <SectionHeading
             number="03. OBSERVATION"
             title="Educational & Observational Character"
@@ -108,53 +105,27 @@ export default function BotanicalGarden() {
             body={[
               "Visitors observe living plant specimens in their cultivated setting, gaining insights into multi-layer canopy dynamics, soil moisture preservation, and plant taxonomy."
             ]}
-            imageTitle="Observational Pathways"
-            imageCaption="Educational observation pathway through plant collection zones."
             reverse={true}
           />
         </div>
       </section>
 
       {/* 04. PLANT CATALOGUE INTRO */}
-      <section className="section section-surface">
-        <div className="container">
-          <div className="catalogue-intro-box">
-            <span className="tag-label">CATALOGUE FRAMEWORK</span>
+      <section className="relative border-b border-farm-border bg-farm-surface py-16 md:py-[110px]">
+        <div className="mx-auto w-[90%] max-w-[1400px]">
+          <div className="border border-farm-border-gold bg-farm-card p-8 text-left md:p-12">
+            <span className="mb-5 inline-flex items-center gap-3 font-body text-xs uppercase tracking-[0.2em] text-farm-gold before:inline-block before:h-px before:w-6 before:bg-farm-gold">CATALOGUE FRAMEWORK</span>
             <h3>Future Botanical Index & Taxonomy Shell</h3>
-            <p className="lead" style={{ maxWidth: '800px', margin: '0.75rem 0 1.5rem' }}>
+            <p className="mb-6 mt-3 max-w-[800px] text-[clamp(1.15rem,1.8vw,1.35rem)] font-light leading-relaxed text-farm-cream">
               This section is structurally established to receive verified botanical names, family classifications, native origins, and specimen location coordinates in future content passes.
             </p>
-            <div className="catalogue-meta-badge">
+            <div className="border-t border-farm-border pt-5 text-[0.7rem] uppercase tracking-[0.2em] text-farm-gold">
               <span>STATUS: CATALOGUE STRUCTURE READY FOR CONTENT INTEGRATION</span>
             </div>
           </div>
         </div>
       </section>
 
-      {/* 05. CLOSING VISUAL SECTION */}
-      <FullWidthImageSection
-        title="Botanical Specimen Close-Up Study — Soans Estate"
-        category="BOTANICAL ARCHIVE"
-        caption="Macro photography visual frame placeholder for living plant collection."
-      />
-
-      <style>{`
-        .catalogue-intro-box {
-          background-color: var(--bg-card);
-          border: 1px solid var(--border-gold);
-          padding: 3rem;
-          text-align: left;
-        }
-
-        .catalogue-meta-badge {
-          font-size: 0.7rem;
-          letter-spacing: 0.2em;
-          color: var(--text-gold);
-          text-transform: uppercase;
-          border-top: 1px solid var(--border-subtle);
-          padding-top: 1.25rem;
-        }
-      `}</style>
     </div>
   );
 }

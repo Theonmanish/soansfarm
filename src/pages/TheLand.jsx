@@ -6,7 +6,7 @@ import FullWidthImageSection from '../components/FullWidthImageSection';
 
 export default function TheLand() {
   return (
-    <div className="the-land-page">
+    <div>
       {/* Page Hero Header */}
       <PageHero
         category="ENVIRONMENT & TOPOGRAPHY"
@@ -22,8 +22,8 @@ export default function TheLand() {
       />
 
       {/* 01. LANDSCAPE & TOPOGRAPHY */}
-      <section className="section">
-        <div className="container">
+      <section className="relative border-b border-farm-border py-16 md:py-[110px]">
+        <div className="mx-auto w-[90%] max-w-[1400px]">
           <SectionHeading
             number="01. LANDSCAPE"
             title="Hilly Terrain & Topography"
@@ -33,15 +33,13 @@ export default function TheLand() {
             title="Terrain Adaptation & Contours"
             lead="The landscape is defined by gentle slopes, hillocks, and natural drainage paths characteristic of the coastal Karnataka hinterland."
             
-            imageTitle="Hilly Landscape Contour"
-            imageCaption="Topographical elevation visual record of the Moodbidri region."
           />
         </div>
       </section>
 
       {/* 02. CLIMATE & HYDROLOGY */}
-      <section className="section section-surface">
-        <div className="container">
+      <section className="relative border-b border-farm-border bg-farm-surface py-16 md:py-[110px]">
+        <div className="mx-auto w-[90%] max-w-[1400px]">
           <SectionHeading
             number="02. CLIMATE"
             title="Monsoon Rainfall & Growing Seasons"
@@ -53,16 +51,14 @@ export default function TheLand() {
             body={[
               "This climate supports dense vegetation and provides ideal growing conditions for tropical fruits, plantation crops, spices, bamboo varieties, and ornamental plants."
             ]}
-            imageTitle="Monsoon Rainfall & Hydrology"
-            imageCaption="Rainwater collection and canopy hydrology visual placeholder."
             reverse={true}
           />
         </div>
       </section>
 
       {/* 03. PLANT LIFE & BIODIVERSITY */}
-      <section className="section">
-        <div className="container">
+      <section className="relative border-b border-farm-border py-16 md:py-[110px]">
+        <div className="mx-auto w-[90%] max-w-[1400px]">
           <SectionHeading
             number="03. BIODIVERSITY"
             title="Cultivated Plant Diversity & Habitats"
@@ -75,40 +71,41 @@ export default function TheLand() {
               "The estate's documented diversity encompasses food crops, plantation species, spice plants, fruit trees, palms, bamboo, ornamental plants, medicinal herbs, and exotic species.",
               "While a formal inventory of fauna is not publicly available, the farm environment provides habitats for birds and living organisms within its diverse vegetation structure."
             ]}
-            imageTitle="Biodiversity Canopy Study"
-            imageCaption="Visual study of canopy density and understory plant life."
+            imageSrc="/bamboo1.jpg"
+            imageAlt="Bamboo grove and visitors at Soans Farm"
+            imageCaption="Bamboo contributes to the estate’s layered plant habitats."
           />
         </div>
       </section>
 
       {/* 04. LAYERED AGRICULTURAL LANDSCAPE */}
-      <section className="section section-surface">
-        <div className="container">
+      <section className="relative border-b border-farm-border bg-farm-surface py-16 md:py-[110px]">
+        <div className="mx-auto w-[90%] max-w-[1400px]">
           <SectionHeading
             number="04. VERTICAL ARCHITECTURE"
             title="Layered Crop Architecture"
             subtitle="Multi-level agricultural canopy design"
           />
-          <div className="editorial-grid grid-4">
-            <div className="layer-card">
-              <span className="layer-num">LEVEL 01</span>
-              <h4>Ground & Field Level</h4>
-              <p>Open pineapple fields, low cover crops, and medicinal ground plants utilizing direct sun exposure.</p>
+          <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="flex flex-col border border-farm-border bg-farm-card p-7">
+              <span className="mb-3 text-[0.65rem] tracking-[0.2em] text-farm-gold">LEVEL 01</span>
+              <h4 className="mb-2 font-editorial text-[1.35rem] text-farm-cream">Ground & Field Level</h4>
+              <p className="text-[0.85rem] text-farm-stone">Open pineapple fields, low cover crops, and medicinal ground plants utilizing direct sun exposure.</p>
             </div>
-            <div className="layer-card">
-              <span className="layer-num">LEVEL 02</span>
-              <h4>Understory & Shade Crops</h4>
-              <p>Shade-associated crops like cocoa, pepper vines, and nursery plants thriving under filtered sunlight.</p>
+            <div className="flex flex-col border border-farm-border bg-farm-card p-7">
+              <span className="mb-3 text-[0.65rem] tracking-[0.2em] text-farm-gold">LEVEL 02</span>
+              <h4 className="mb-2 font-editorial text-[1.35rem] text-farm-cream">Understory & Shade Crops</h4>
+              <p className="text-[0.85rem] text-farm-stone">Shade-associated crops like cocoa, pepper vines, and nursery plants thriving under filtered sunlight.</p>
             </div>
-            <div className="layer-card">
-              <span className="layer-num">LEVEL 03</span>
-              <h4>Mid-Canopy Fruit Trees</h4>
-              <p>Diverse tropical fruit trees including rambutan, mangosteen, durian, and nutmeg specimens.</p>
+            <div className="flex flex-col border border-farm-border bg-farm-card p-7">
+              <span className="mb-3 text-[0.65rem] tracking-[0.2em] text-farm-gold">LEVEL 03</span>
+              <h4 className="mb-2 font-editorial text-[1.35rem] text-farm-cream">Mid-Canopy Fruit Trees</h4>
+              <p className="text-[0.85rem] text-farm-stone">Diverse tropical fruit trees including rambutan, mangosteen, durian, and nutmeg specimens.</p>
             </div>
-            <div className="layer-card">
-              <span className="layer-num">LEVEL 04</span>
-              <h4>Upper Palms & Bamboo</h4>
-              <p>Tall areca nut palms, coconut crowns, and towering giant bamboo groves defining the sky skyline.</p>
+            <div className="flex flex-col border border-farm-border bg-farm-card p-7">
+              <span className="mb-3 text-[0.65rem] tracking-[0.2em] text-farm-gold">LEVEL 04</span>
+              <h4 className="mb-2 font-editorial text-[1.35rem] text-farm-cream">Upper Palms & Bamboo</h4>
+              <p className="text-[0.85rem] text-farm-stone">Tall areca nut palms, coconut crowns, and towering giant bamboo groves defining the sky skyline.</p>
             </div>
           </div>
         </div>
@@ -116,38 +113,11 @@ export default function TheLand() {
 
       {/* 05. CLOSING VISUAL SECTION */}
       <FullWidthImageSection
-        title="Panoramic Landscape Visual — Soans Estate"
-        category="LANDSCAPE ARCHIVE"
-        caption="Full-width visual record of coastal Karnataka terrain and layered canopy."
+        imageSrc="/hero.png"
+        imageAlt="Pineapple fields beneath tropical canopy at Soans Farm"
+        caption="Pineapple cultivation beneath the estate’s tropical canopy."
       />
 
-      <style>{`
-        .layer-card {
-          background-color: var(--bg-card);
-          border: 1px solid var(--border-subtle);
-          padding: 1.75rem;
-          display: flex;
-          flex-direction: column;
-        }
-
-        .layer-num {
-          font-size: 0.65rem;
-          letter-spacing: 0.2em;
-          color: var(--text-gold);
-          margin-bottom: 0.75rem;
-        }
-
-        .layer-card h4 {
-          font-family: var(--font-serif);
-          font-size: 1.35rem;
-          margin-bottom: 0.5rem;
-        }
-
-        .layer-card p {
-          font-size: 0.85rem;
-          color: var(--text-secondary);
-        }
-      `}</style>
     </div>
   );
 }

@@ -1,194 +1,51 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 
 const currentYear = new Date().getFullYear();
+const footerLink = 'text-[0.9rem] text-farm-stone transition-colors hover:text-farm-cream';
+const heading = 'mb-5 font-body text-xs uppercase tracking-[0.2em] text-farm-gold';
 
 export default function GlobalFooter() {
   return (
-    <footer className="global-footer">
-      <div className="container">
-        <div className="footer-top">
-          {/* Column 1: Identity */}
-          <div className="footer-col brand-col">
-            <Link to="/" className="footer-brand-title">
-              SOANS FARM
-            </Link>
-
-            <p className="footer-brand-tagline">
-              Agricultural Estate & Botanical Collection
-            </p>
-
-            <p className="footer-location-note">
-              Established agricultural Farm.
-            </p>
+    <footer className="relative border-t border-farm-border bg-farm-surface px-0 pb-10 pt-20">
+      <div className="mx-auto w-[90%] max-w-[1400px]">
+        <div className="grid grid-cols-2 gap-8 border-b border-farm-border pb-14 md:grid-cols-[1.4fr_1fr_1fr_1fr] md:gap-12">
+          <div className="col-span-2 md:col-span-1">
+            <Link to="/" className="mb-1 inline-block font-editorial text-[1.8rem] tracking-[0.12em] text-farm-cream">SOANS FARM</Link>
+            <p className="mb-5 text-xs uppercase tracking-[0.15em] text-farm-gold">Agricultural Estate & Botanical Collection</p>
+            <p className="text-[0.9rem] leading-relaxed text-farm-stone">Established agricultural Farm.</p>
           </div>
-
-          {/* Column 2: Farm */}
-          <div className="footer-col">
-            <h4 className="footer-heading">THE FARM</h4>
-            <ul className="footer-nav">
-              <li><Link to="/">Home</Link></li>
-              <li><Link to="/the-farm">The Farm & Heritage</Link></li>
-              <li><Link to="/the-land">The Land & Environment</Link></li>
-              <li><Link to="/cultivation">Agricultural Cultivation</Link></li>
-              <li><Link to="/botanical-garden">Botanical Collection</Link></li>
+          <div>
+            <h4 className={heading}>THE FARM</h4>
+            <ul className="m-0 flex list-none flex-col gap-3 p-0">
+              <li><Link to="/" className={footerLink}>Home</Link></li>
+              <li><Link to="/the-farm" className={footerLink}>The Farm & Heritage</Link></li>
+              <li><Link to="/the-land" className={footerLink}>The Land & Environment</Link></li>
+              <li><Link to="/cultivation" className={footerLink}>Agricultural Cultivation</Link></li>
+              <li><Link to="/botanical-garden" className={footerLink}>Botanical Collection</Link></li>
             </ul>
           </div>
-
-          {/* Column 3: Discovery */}
-          <div className="footer-col">
-            <h4 className="footer-heading">DISCOVER</h4>
-            <ul className="footer-nav">
-              <li><Link to="/experiences">Farm Experiences</Link></li>
-              <li><Link to="/explore">Explore Farm</Link></li>
-              <li><Link to="/energy-healing">Energy & Reflection</Link></li>
-              <li><Link to="/products">Farm Products</Link></li>
-              <li><Link to="/journal">Journal</Link></li>
-              <li><Link to="/visit">Visiting Information</Link></li>
-              <li><Link to="/#contact">Contact</Link></li>
+          <div>
+            <h4 className={heading}>DISCOVER</h4>
+            <ul className="m-0 flex list-none flex-col gap-3 p-0">
+              <li><Link to="/experiences" className={footerLink}>Farm Experiences</Link></li>
+              <li><Link to="/explore" className={footerLink}>Explore Farm</Link></li>
+              <li><Link to="/energy-healing" className={footerLink}>Energy & Reflection</Link></li>
+              <li><Link to="/products" className={footerLink}>Farm Products</Link></li>
+              <li><Link to="/journal" className={footerLink}>Journal</Link></li>
+              <li><Link to="/visit" className={footerLink}>Visiting Information</Link></li>
+              <li><Link to="/#contact" className={footerLink}>Contact</Link></li>
             </ul>
           </div>
-
-          {/* Column 4: Location */}
-          <div className="footer-col">
-            <h4 className="footer-heading">LOCATION CONTEXT</h4>
-            <p className="footer-meta-text">
-              Moodbidri, Dakshina Kannada District
-              <br />
-              Coastal Karnataka, India
-            </p>
+          <div>
+            <h4 className={heading}>LOCATION CONTEXT</h4>
+            <p className="mb-6 text-[0.9rem] leading-relaxed text-farm-stone">Moodbidri, Dakshina Kannada District<br />Coastal Karnataka, India</p>
           </div>
         </div>
-
-        {/* Copyright */}
-        <div className="footer-bottom">
+        <div className="flex items-center justify-center pt-8 text-center text-xs tracking-[0.12em] text-farm-muted">
           <p>© {currentYear} SOANS FARM. ALL RIGHTS RESERVED.</p>
-         
         </div>
       </div>
-      <style>{`
-        .global-footer {
-          background-color: var(--bg-surface);
-          border-top: 1px solid var(--border-subtle);
-          padding: 80px 0 40px 0;
-          position: relative;
-        }
-
-        .footer-top {
-          display: grid;
-          grid-template-columns: 1.4fr 1fr 1fr 1fr;
-          padding-bottom: 60px;
-          border-bottom: 1px solid var(--border-subtle);
-          gap: 3rem;
-        }
-
-        .footer-brand-title {
-          display: inline-block;
-          font-family: var(--font-serif);
-          font-size: 1.8rem;
-          letter-spacing: 0.12em;
-          color: var(--text-primary);
-          margin-bottom: 0.25rem;
-        }
-
-        .footer-brand-tagline {
-          font-size: 0.8rem;
-          text-transform: uppercase;
-          letter-spacing: 0.15em;
-          color: var(--text-gold);
-          margin-bottom: 1.25rem;
-        }
-
-        .footer-location-note {
-          font-size: 0.9rem;
-          color: var(--text-secondary);
-          line-height: 1.6;
-        }
-
-        .footer-heading {
-          font-family: var(--font-sans);
-          font-size: 0.75rem;
-          text-transform: uppercase;
-          letter-spacing: 0.2em;
-          color: var(--text-gold);
-          margin-bottom: 1.25rem;
-        }
-
-        .footer-nav {
-          list-style: none;
-          display: flex;
-          flex-direction: column;
-          gap: 0.75rem;
-        }
-
-        .footer-nav a {
-          font-size: 0.9rem;
-          color: var(--text-secondary);
-          transition: color 0.2s ease;
-        }
-
-        .footer-nav a:hover {
-          color: var(--text-primary);
-        }
-
-        .footer-meta-text {
-          font-size: 0.9rem;
-          color: var(--text-secondary);
-          line-height: 1.6;
-          margin-bottom: 1.5rem;
-        }
-
-        .footer-status-badge {
-          display: inline-flex;
-          align-items: center;
-          gap: 0.5rem;
-          font-size: 0.65rem;
-          text-transform: uppercase;
-          letter-spacing: 0.15em;
-          color: var(--text-muted);
-          border: 1px solid var(--border-subtle);
-          padding: 0.4rem 0.8rem;
-        }
-
-        .status-dot {
-          width: 6px;
-          height: 6px;
-          border-radius: 50%;
-          background-color: var(--text-gold);
-        }
-
-        .footer-bottom {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          padding-top: 30px;
-          font-size: 0.75rem;
-          letter-spacing: 0.12em;
-          color: var(--text-muted);
-        }
-
-        .footer-archival-note {
-          font-family: var(--font-sans);
-          font-size: 0.7rem;
-        }
-
-        @media (max-width: 768px) {
-          .footer-top {
-            grid-template-columns: repeat(2, minmax(0, 1fr));
-          }
-
-          .brand-col {
-            grid-column: 1 / -1;
-          }
-
-          .footer-bottom {
-            flex-direction: column;
-            gap: 1rem;
-            text-align: center;
-          }
-        }
-      `}</style>
     </footer>
   );
 }

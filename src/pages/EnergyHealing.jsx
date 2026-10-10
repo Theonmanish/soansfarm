@@ -18,7 +18,7 @@ export default function EnergyHealing() {
   }, [hash]);
 
   return (
-    <div className="energy-healing-page">
+    <div>
       {/* Page Hero */}
       <PageHero
         category="REFLECTION & CONTEMPLATIVE SPACES"
@@ -39,30 +39,28 @@ export default function EnergyHealing() {
       />
 
       {/* 01. INTRODUCTION */}
-      <section id="overview" className="section">
-        <div className="container">
+      <section id="overview" className="relative border-b border-farm-border py-16 md:py-[110px]">
+        <div className="mx-auto w-[90%] max-w-[1400px]">
           <SectionHeading
             number="01. OVERVIEW"
-            title="Spaces for Stillness"
+            title="Rejuvenation"
             subtitle="Exploring the relationship between pattern, place, and contemplation"
           />
 
           <EditorialBlock
             title="A Different Way to Experience the Landscape"
-            lead="Beyond its agricultural and botanical collections, Soans Farm contains structures inspired by traditional approaches to meditation, spatial patterns, and contemplative practice."
+            lead="The Farm is also a unique centre for drugless healing wherein ancient healing structures like Native American Medicine Wheel, European Labyrinth and Egyptian Pyramid were replicated by Dr. L. C. Soans (1934–2023), the renowned Botanist, Horticulturist and Dowser who healed hundreds of people with non-infectious physiological illnesses including cancer by exposing them to the beneficial energies of these structures and some naturally occurring Earth Energies."
             body={[
-              "These structures include labyrinths, a Medicine Wheel, a pyramid form, and a spiral pattern. Their designs draw from traditions associated with different parts of the world and reflect an interest in how constructed spaces can shape an individual's experience of a place.",
+              
               "Visitors can explore these spaces at their own pace, using the pathways and patterns as settings for quiet walking, observation, or personal reflection. Their significance lies in the traditions and interpretations associated with them, as well as in the opportunity they provide to pause within the wider farm landscape.",
             ]}
-            imageTitle="Patterns in the Landscape"
-            imageCaption="Distinctive structures that invite observation and reflection."
           />
         </div>
       </section>
 
       {/* 02. THE LABYRINTHS */}
-      <section id="labyrinths" className="section section-surface">
-        <div className="container">
+      <section id="labyrinths" className="relative border-b border-farm-border bg-farm-surface py-16 md:py-[110px]">
+        <div className="mx-auto w-[90%] max-w-[1400px]">
           <SectionHeading
             number="02. THE LABYRINTHS"
             title="The Path Inward"
@@ -78,39 +76,19 @@ export default function EnergyHealing() {
               "Across different traditions, labyrinth walking has been used as a form of pilgrimage, meditation, and contemplative practice. The gradual movement along a single path encourages an unhurried pace and offers space for thought, attention, and personal reflection.",
               "At the farm, the labyrinths can be approached as places to step away from everyday distractions, become more attentive to the immediate surroundings, and experience the simple rhythm of walking. Ideas of renewal, balance, and healing form part of the traditions associated with labyrinths, although specific medical benefits have not been established.",
             ]}
-            imageTitle="The Labyrinth at Soans Farm"
+            imageSrc="/labyrinth1.png"
+            imageAlt="Labyrinth path at Soans Farm"
             imageCaption="A winding path designed around a central point."
             reverse={true}
           />
         </div>
       </section>
 
-      {/* 03. THE MEDICINE WHEEL */}
-      <section id="medicine-wheel" className="section">
-        <div className="container">
-          <SectionHeading
-            number="03. THE MEDICINE WHEEL"
-            title="A Pattern of Connection"
-            subtitle="A circular form inspired by traditional sacred patterns"
-          />
 
-          <EditorialBlock
-            title="The Medicine Wheel"
-            lead="The Medicine Wheel at Soans Farm draws inspiration from circular patterns associated with Indigenous North American traditions and their varied cultural interpretations."
-            body={[
-              "Medicine Wheels are not a single, universal design. Their meanings differ among Indigenous peoples, and some have cultural or spiritual significance that should be understood within their specific traditions.",
-              "The structure at Soans Farm reflects an interest in these traditional forms and in the use of circular patterns to create a defined space for contemplation. Its presence forms part of the estate's broader collection of structures inspired by historical and cultural ideas about place.",
-              "Visitors can experience the space quietly and respectfully, taking time to observe its form and consider the many ways people across cultures have given meaning to the landscapes and places around them.",
-            ]}
-            imageTitle="The Medicine Wheel"
-            imageCaption="A circular ground pattern inspired by traditional forms."
-          />
-        </div>
-      </section>
 
-      {/* 04. PYRAMID */}
-      <section id="pyramid" className="section section-surface">
-        <div className="container">
+      {/* 03. PYRAMID */}
+      <section id="pyramid" className="relative border-b border-farm-border bg-farm-surface py-16 md:py-[110px]">
+        <div className="mx-auto w-[90%] max-w-[1400px]">
           <SectionHeading
             number="04. PYRAMID FORM"
             title="Geometry & Proportion"
@@ -125,16 +103,40 @@ export default function EnergyHealing() {
               "At Soans Farm, the pyramid forms part of a group of structures created from an interest in these historical ideas and their interpretations. The space may be experienced as a setting for quiet sitting and reflection.",
               "Claims that pyramid shapes generate therapeutic energies or cure illness are not supported by reliable scientific evidence. The structure is best understood through its form, cultural associations, and role within the farm's distinctive landscape.",
             ]}
-            imageTitle="The Pyramid"
-            imageCaption="A geometric form inspired by historic architectural traditions."
             reverse={true}
           />
         </div>
       </section>
 
+      {/* 04. THE MEDICINE WHEEL */}
+      <section id="medicine-wheel" className="relative border-b border-farm-border py-16 md:py-[110px]">
+        <div className="mx-auto w-[90%] max-w-[1400px]">
+          <SectionHeading
+            number="03. THE MEDICINE WHEEL"
+            title="A Pattern of Connection"
+            subtitle="A circular form inspired by traditional sacred patterns"
+          />
+
+
+          <EditorialBlock
+            title="The Medicine Wheel"
+            lead="The Medicine Wheel at Soans Farm draws inspiration from circular patterns associated with Indigenous North American traditions and their varied cultural interpretations."
+            imageSrc="/mw.jpg"
+            imageAlt="Medicine Wheel at Soans Farm"
+            imageCaption="A circular form inspired by traditional sacred patterns."
+            reverse={false}
+            body={[
+              "Medicine Wheels are not a single, universal design. Their meanings differ among Indigenous peoples, and some have cultural or spiritual significance that should be understood within their specific traditions.",
+              "The structure at Soans Farm reflects an interest in these traditional forms and in the use of circular patterns to create a defined space for contemplation. Its presence forms part of the estate's broader collection of structures inspired by historical and cultural ideas about place.",
+              "Visitors can experience the space quietly and respectfully, taking time to observe its form and consider the many ways people across cultures have given meaning to the landscapes and places around them.",
+            ]}
+          />
+        </div>
+      </section>
+
       {/* 05. THE SPIRAL */}
-      <section id="spiral" className="section">
-        <div className="container">
+      <section id="spiral" className="relative border-b border-farm-border py-16 md:py-[110px]">
+        <div className="mx-auto w-[90%] max-w-[1400px]">
           <SectionHeading
             number="05. THE SPIRAL"
             title="Movement in a Continuous Form"
@@ -149,35 +151,11 @@ export default function EnergyHealing() {
               "Its winding shape offers a visual and spatial experience that can be explored slowly, drawing attention to direction, movement, and the relationship between a pattern and the ground on which it is formed.",
               "Although the historical material associates spiral patterns with particular energy concepts, claims of specific healing effects remain unverified. The pattern can nevertheless provide an opportunity for observation, stillness, and personal contemplation.",
             ]}
-            imageTitle="The Spiral Pattern"
-            imageCaption="A continuous geometric form integrated into the landscape."
           />
         </div>
       </section>
 
-      {/* 06. REFLECTION */}
-      <section id="reflection" className="section section-surface">
-        <div className="container">
-          <SectionHeading
-            number="06. REFLECTION"
-            title="An Invitation to Pause"
-            subtitle="Experience these spaces with curiosity and respect"
-          />
 
-          <EditorialBlock
-            title="Time, Attention, and Place"
-            lead="Each structure offers a different way to engage with the farm beyond its cultivated fields and botanical collections."
-            body={[
-              "A labyrinth can be experienced through the rhythm of walking. A circular pattern invites observation of its form, while a geometric structure can prompt curiosity about the history and ideas that inspired its design.",
-              "There is no single interpretation that visitors need to adopt. These spaces can be approached as cultural expressions, architectural forms, or settings for quiet reflection within the agricultural landscape.",
-              "The traditions associated with energy healing are part of the historical context of these structures, rather than a substitute for evidence-based medical care. Visitors should continue to seek qualified medical advice and treatment for health concerns.",
-            ]}
-            imageTitle="A Quiet Space at the Farm"
-            imageCaption="Time for observation and reflection within the estate."
-            reverse={true}
-          />
-        </div>
-      </section>
     </div>
   );
 }

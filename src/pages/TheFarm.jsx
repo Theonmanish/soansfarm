@@ -18,7 +18,7 @@ export default function TheFarm() {
   }, [hash]);
 
   return (
-    <div className="the-farm-page">
+    <div>
       {/* Page Hero */}
       <PageHero
         category="ESTATE IDENTITY & HERITAGE"
@@ -39,8 +39,8 @@ export default function TheFarm() {
       />
 
       {/* 01. OVERVIEW */}
-      <section id="overview" className="section">
-        <div className="container">
+      <section id="overview" className="relative border-b border-farm-border py-16 md:py-[110px]">
+        <div className="mx-auto w-[90%] max-w-[1400px]">
           <SectionHeading
             number="01. OVERVIEW"
             title="A Farm Shaped by Cultivation"
@@ -54,15 +54,13 @@ export default function TheFarm() {
               "The estate combines pineapple fields, plantation crops, tropical fruit trees, spice cultivation, bamboo varieties, and diverse plant collections within a shared agricultural landscape.",
               "Its character lies in the relationship between productive farming and horticultural experimentation, where crop cultivation and the study of plant diversity have developed alongside one another over generations.",
             ]}
-            imageTitle="The Agricultural Landscape"
-            imageCaption="A varied landscape shaped by successive generations of cultivation."
           />
         </div>
       </section>
 
       {/* 02. HISTORY & HERITAGE */}
-      <section id="history" className="section section-surface">
-        <div className="container">
+      <section id="history" className="relative border-b border-farm-border bg-farm-surface py-16 md:py-[110px]">
+        <div className="mx-auto w-[90%] max-w-[1400px]">
           <SectionHeading
             number="02. HISTORY & HERITAGE"
             title="A History of Agricultural Enterprise"
@@ -78,8 +76,6 @@ export default function TheFarm() {
               "Early coconut cultivation struggled with shallow soil over laterite beds and limited irrigation. Through experimentation and intercropping, Alfred Soans introduced crops better suited to the land. Pineapple proved particularly important, eventually becoming the estate’s principal commercial crop.",
               "The project faced further difficulties during the Second World War, when declining agricultural returns and changing political circumstances threatened its continuation. Alfred Soans persisted in his efforts to preserve the farm, eventually securing its continued management under a lease.",
             ]}
-            imageTitle="The Early Agricultural Project"
-            imageCaption="Historical records documenting the development of Soans Farm."
             reverse={true}
           />
 
@@ -92,71 +88,69 @@ export default function TheFarm() {
               "This diversification enabled more extensive use of the land throughout the year and created additional employment opportunities for the surrounding community.",
               "In later decades, Dr. Livingston Chandramohan (L. C.) Soans, an agricultural scientist and botanist, further developed the estate's horticultural character. His work introduced unusual tropical fruit species, expanded plant collections, and cultivated diverse bamboo varieties, extending the farm's legacy beyond commercial agriculture.",
             ]}
-            imageTitle="A Diversified Estate"
-            imageCaption="Mixed cropping and successive generations of horticultural development."
           />
         </div>
       </section>
 
       {/* 03. PHILOSOPHY */}
-      <section id="philosophy" className="section">
-        <div className="container">
+      <section id="philosophy" className="relative border-b border-farm-border py-16 md:py-[110px]">
+        <div className="mx-auto w-[90%] max-w-[1400px]">
           <SectionHeading
             number="03. PHILOSOPHY"
             title="Principles of Cultivation"
             subtitle="A practical approach to land, crops, and botanical exploration"
           />
 
-          <div className="editorial-grid grid-3">
-            <div className="philosophy-card-seamless">
-              <span className="phi-num">01</span>
-              <h4>Crop Diversification</h4>
-              <p>
+          <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="flex flex-col border-b border-farm-border py-6">
+              <span className="mb-2 font-editorial text-3xl text-farm-gold">01</span>
+              <h4 className="mb-2 font-editorial text-2xl text-farm-cream">Crop Diversification</h4>
+              <p className="text-[0.9rem] leading-relaxed text-farm-stone">
                 Growing a range of crops suited to the land, allowing different
                 species to contribute to a varied agricultural system.
               </p>
             </div>
 
-            <div className="philosophy-card-seamless">
-              <span className="phi-num">02</span>
-              <h4>Agricultural Experimentation</h4>
-              <p>
+            <div className="flex flex-col border-b border-farm-border py-6">
+              <span className="mb-2 font-editorial text-3xl text-farm-gold">02</span>
+              <h4 className="mb-2 font-editorial text-2xl text-farm-cream">Agricultural Experimentation</h4>
+              <p className="text-[0.9rem] leading-relaxed text-farm-stone">
                 Exploring new crops and cultivation methods to identify what
                 can thrive in the region's soil and climatic conditions.
               </p>
             </div>
 
-            <div className="philosophy-card-seamless">
-              <span className="phi-num">03</span>
-              <h4>Intercropping</h4>
-              <p>
+            <div className="flex flex-col border-b border-farm-border py-6">
+              <span className="mb-2 font-editorial text-3xl text-farm-gold">03</span>
+              <h4 className="mb-2 font-editorial text-2xl text-farm-cream">Intercropping</h4>
+              <p className="text-[0.9rem] leading-relaxed text-farm-stone">
                 Making productive use of the land by cultivating compatible
                 crops together rather than relying on a single crop.
               </p>
             </div>
 
-            <div className="philosophy-card-seamless">
-              <span className="phi-num">04</span>
-              <h4>Adaptation to the Land</h4>
-              <p>
+            <div className="flex flex-col border-b border-farm-border py-6">
+              <span className="mb-2 font-editorial text-3xl text-farm-gold">04</span>
+              <h4 className="mb-2 font-editorial text-2xl text-farm-cream">Adaptation to the Land</h4>
+              <p className="text-[0.9rem] leading-relaxed text-farm-stone">
                 Responding to local soil, terrain, rainfall, and irrigation
                 conditions when selecting crops and cultivation practices.
               </p>
             </div>
 
-            <div className="philosophy-card-seamless">
-              <span className="phi-num">05</span>
-              <h4>Horticultural Diversity</h4>
-              <p>
+            <div className="flex flex-col border-b border-farm-border py-6">
+              <span className="mb-2 font-editorial text-3xl text-farm-gold">05</span>
+              <h4 className="mb-2 font-editorial text-2xl text-farm-cream">Horticultural Diversity</h4>
+              <p className="text-[0.9rem] leading-relaxed text-farm-stone">
                 Extending cultivation beyond commercial crops through tropical
                 fruit species, bamboo, and diverse plant collections.
               </p>
             </div>
 
-            <div className="philosophy-card-seamless">
-              <span className="phi-num">06</span>
-              <h4>Knowledge Through Practice</h4>
-              <p>
+            <div className="flex flex-col border-b border-farm-border py-6">
+              <span className="mb-2 font-editorial text-3xl text-farm-gold">06</span>
+              <h4 className="mb-2 font-editorial text-2xl text-farm-cream">Knowledge Through Practice</h4>
+              <p className="text-[0.9rem] leading-relaxed text-farm-stone">
                 Developing agricultural knowledge through continued cultivation,
                 observation, and experimentation across generations.
               </p>
@@ -164,33 +158,6 @@ export default function TheFarm() {
           </div>
         </div>
       </section>
-
-      <style>{`
-        .philosophy-card-seamless {
-          padding: 1.5rem 0;
-          border-bottom: 1px solid var(--border-subtle);
-          display: flex;
-          flex-direction: column;
-        }
-
-        .phi-num {
-          font-family: var(--font-serif);
-          font-size: 1.8rem;
-          color: var(--text-gold);
-          margin-bottom: 0.5rem;
-        }
-
-        .philosophy-card-seamless h4 {
-          margin-bottom: 0.5rem;
-          font-family: var(--font-serif);
-          font-size: 1.35rem;
-        }
-
-        .philosophy-card-seamless p {
-          font-size: 0.9rem;
-          color: var(--text-secondary);
-        }
-      `}</style>
     </div>
   );
 }

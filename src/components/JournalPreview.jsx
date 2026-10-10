@@ -1,80 +1,18 @@
 import React from 'react';
-import PlaceholderImage from './PlaceholderImage';
+import ImageFigure from './ImageFigure';
 
-export default function JournalPreview({
-  category = 'ESTATE ARCHIVE',
-  date = 'OCTOBER 2026',
-  title = 'Journal Article Title Placeholder',
-  excerpt = 'Short editorial excerpt describing the botanical or agricultural record entry.',
-  imageTitle = ''
-}) {
+export default function JournalPreview({ category = 'ESTATE ARCHIVE', date = 'OCTOBER 2026', title = '', excerpt = '', imageSrc = '', imageAlt = '' }) {
   return (
-    <article className="journal-editorial-entry">
-      <div className="journal-entry-image">
-        <PlaceholderImage
-          aspectRatio="16-9"
-          title={imageTitle || title}
-          category={category}
-        />
-      </div>
-      <div className="journal-entry-content">
-        <div className="journal-entry-meta">
-          <span className="journal-category">{category}</span>
-          <span className="journal-date">{date}</span>
+    <article className="flex h-full flex-col border-b border-farm-border pb-8">
+      <ImageFigure src={imageSrc} alt={imageAlt || title} />
+      <div className="flex flex-grow flex-col pt-6">
+        <div className="mb-3 flex justify-between gap-3 text-[0.65rem] uppercase tracking-[0.15em]">
+          <span className="text-farm-gold">{category}</span><span className="text-farm-muted">{date}</span>
         </div>
-        <h3 className="journal-title">{title}</h3>
-        <p className="journal-excerpt">{excerpt}</p>
-        <span className="text-link">READ ENTRY</span>
+        <h3 className="mb-3 font-editorial text-2xl leading-tight text-farm-cream">{title}</h3>
+        <p className="mb-6 flex-grow text-[0.95rem] font-light leading-[1.7] text-farm-stone">{excerpt}</p>
+        <span className="inline-flex items-center gap-2 self-start border-b border-farm-border-gold pb-1 font-body text-[0.85rem] uppercase tracking-[0.15em] text-farm-gold transition-colors hover:border-farm-cream hover:text-farm-cream">READ ENTRY</span>
       </div>
-
-      <style>{`
-        .journal-editorial-entry {
-          display: flex;
-          flex-direction: column;
-          height: 100%;
-          padding-bottom: 2rem;
-          border-bottom: 1px solid var(--border-subtle);
-        }
-
-        .journal-entry-content {
-          padding-top: 1.5rem;
-          display: flex;
-          flex-direction: column;
-          flex-grow: 1;
-        }
-
-        .journal-entry-meta {
-          display: flex;
-          justify-content: space-between;
-          font-size: 0.65rem;
-          letter-spacing: 0.15em;
-          text-transform: uppercase;
-          margin-bottom: 0.75rem;
-        }
-
-        .journal-category {
-          color: var(--text-gold);
-        }
-
-        .journal-date {
-          color: var(--text-muted);
-        }
-
-        .journal-title {
-          font-family: var(--font-serif);
-          font-size: 1.5rem;
-          margin-bottom: 0.75rem;
-          color: var(--text-primary);
-          line-height: 1.25;
-        }
-
-        .journal-excerpt {
-          font-size: 0.95rem;
-          color: var(--text-secondary);
-          margin-bottom: 1.5rem;
-          flex-grow: 1;
-        }
-      `}</style>
     </article>
   );
 }

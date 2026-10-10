@@ -1,94 +1,37 @@
 import React from 'react';
 
-export default function PlaceholderImage({ 
-  aspectRatio = '16-9', 
-  title = 'Estate Visual Record', 
-  category = 'PHOTOGRAPHY', 
-  caption = '',
-  className = '',
-  fullBleed = false
-}) {
+const ratios = {
+  '16-9': 'aspect-video',
+  '4-3': 'aspect-[4/3]',
+  '3-4': 'aspect-[3/4]',
+  '21-9': 'aspect-[21/9]',
+  '1-1': 'aspect-square',
+};
+
+export default function PlaceholderImage({ aspectRatio = '16-9', title = 'Estate Visual Record', category = 'PHOTOGRAPHY', caption = '', className = '', fullBleed = false }) {
   return (
-    <div className={`photo-seamless-wrapper ${fullBleed ? 'full-bleed-media' : ''} ${className}`}>
-      <div className={`photo-frame-seamless photo-frame-aspect-${aspectRatio}`}>
-        <div className="photo-seamless-overlay">
-          <div className="photo-placeholder-meta">
-            <span className="photo-placeholder-tag">{category}</span>
+    <div className={`${fullBleed ? 'relative left-1/2 w-screen -translate-x-1/2' : 'relative w-full'} ${className}`}>
+      <div className={`relative w-full overflow-hidden bg-gradient-to-br from-[#131713] to-farm-bg ${ratios[aspectRatio] || 'aspect-video'}`}>
+        <div className="absolute inset-0 flex flex-col justify-between border-b border-white/5 bg-[radial-gradient(circle_at_50%_50%,rgba(19,23,19,0.2)_0%,rgba(11,11,10,0.85)_100%)] p-8">
+          <div className="flex items-center justify-between font-body text-[0.7rem] uppercase tracking-[0.15em] text-farm-muted">
+            <span className="text-[0.65rem] tracking-[0.2em] text-farm-gold">{category}</span>
             <span>SOANS ESTATE ARCHIVE</span>
           </div>
-          
-          <div className="photo-placeholder-center">
-            <svg 
-              width="28" 
-              height="28" 
-              viewBox="0 0 24 24" 
-              fill="none" 
-              stroke="var(--text-gold)" 
-              strokeWidth="1" 
-              strokeLinecap="round" 
-              strokeLinejoin="round"
-              style={{ margin: '0 auto', opacity: 0.5 }}
-            >
+          <div className="m-auto text-center">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--color-farm-gold)" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="mx-auto opacity-50">
               <rect width="18" height="18" x="3" y="3" rx="0" ry="0" />
               <circle cx="9" cy="9" r="2" />
               <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21" />
             </svg>
-            <p className="photo-placeholder-title">{title}</p>
+            <p className="mt-2 font-editorial text-xl italic text-farm-stone">{title}</p>
           </div>
-
-          <div className="photo-placeholder-meta">
+          <div className="flex items-center justify-between font-body text-[0.7rem] uppercase tracking-[0.15em] text-farm-muted">
             <span>SPECIMEN / FIELD LOCATION</span>
             <span>MOODBIDRI, KARNATAKA</span>
           </div>
         </div>
       </div>
-      {caption && (
-        <p className="photo-caption-integrated">
-          <span style={{ color: 'var(--text-gold)' }}>▪</span> {caption}
-        </p>
-      )}
-
-      <style>{`
-        .photo-seamless-wrapper {
-          position: relative;
-          width: 100%;
-        }
-
-        .full-bleed-media {
-          width: 100vw;
-          margin-left: calc(50% - 50vw);
-        }
-
-        .photo-frame-seamless {
-          position: relative;
-          width: 100%;
-          background: linear-gradient(135deg, #131713 0%, #0B0B0A 100%);
-          border: none;
-          box-shadow: none;
-          overflow: hidden;
-        }
-
-        .photo-seamless-overlay {
-          position: absolute;
-          inset: 0;
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-          padding: 2rem;
-          background: radial-gradient(circle at 50% 50%, rgba(19, 23, 19, 0.2) 0%, rgba(11, 11, 10, 0.85) 100%);
-          border-bottom: 1px solid rgba(234, 228, 216, 0.05);
-        }
-
-        .photo-caption-integrated {
-          font-size: 0.8rem;
-          color: var(--text-muted);
-          margin-top: 0.75rem;
-          font-style: italic;
-          display: flex;
-          align-items: center;
-          gap: 0.5rem;
-        }
-      `}</style>
+      {caption && <p className="mt-3 flex items-center gap-2 text-xs italic text-farm-muted"><span className="text-farm-gold">▪</span>{caption}</p>}
     </div>
   );
 }

@@ -25,14 +25,14 @@ function MainLayout() {
   const isExplorePage = location.pathname === '/explore';
 
   return (
-    <div className="app-root">
+    <div className="min-h-screen bg-farm-bg text-farm-cream">
       <ScrollToTop />
       
       {/* Global Navigation Header */}
       <GlobalHeader />
 
       {/* Primary Page Route Switch */}
-      <main className="app-content">
+      <main>
         <PageErrorBoundary key={location.pathname}>
           <Routes>
             <Route path="/" element={<Home />} />
@@ -59,12 +59,12 @@ function MainLayout() {
 
 function NotFound() {
   return (
-    <section className="section">
-      <div className="container">
-        <p className="tag-label">404 — PAGE NOT FOUND</p>
-        <h1>We couldn’t find that page.</h1>
-        <p className="lead">The page may have moved, or the address may be incorrect.</p>
-        <Link className="btn-editorial" to="/">Return to the home page</Link>
+    <section className="relative border-b border-farm-border py-16 md:py-28">
+      <div className="mx-auto w-[90%] max-w-[1400px]">
+        <p className="mb-5 inline-flex items-center gap-3 text-xs uppercase tracking-[0.2em] text-farm-gold before:h-px before:w-6 before:bg-farm-gold">404 — PAGE NOT FOUND</p>
+        <h1 className="mb-3 font-editorial text-[clamp(2.75rem,5vw,4.5rem)] leading-tight text-farm-cream">We couldn’t find that page.</h1>
+        <p className="mb-8 text-[clamp(1.15rem,1.8vw,1.35rem)] font-light leading-relaxed text-farm-cream">The page may have moved, or the address may be incorrect.</p>
+        <Link className="inline-flex items-center gap-3 border border-farm-border-medium px-7 py-3.5 text-sm uppercase tracking-[0.15em] text-farm-cream transition-all hover:border-farm-gold hover:bg-farm-gold/5 hover:text-farm-gold" to="/">Return to the home page</Link>
       </div>
     </section>
   );

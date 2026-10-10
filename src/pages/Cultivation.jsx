@@ -2,7 +2,7 @@ import React from 'react';
 import PageHero from '../components/PageHero';
 import SectionHeading from '../components/SectionHeading';
 import CropPlantFeature from '../components/CropPlantFeature';
-import PlaceholderImage from '../components/PlaceholderImage';
+import ImageFigure from '../components/ImageFigure';
 
 export default function Cultivation() {
   const cropList = [
@@ -14,8 +14,7 @@ export default function Cultivation() {
         { label: 'Cultivation Style', value: 'Open field & inter-cropped beds' },
         { label: 'Heritage', value: 'Introduced systematically in late 1920s' }
       ],
-      imageTitle: 'Pineapple Plantation Field',
-      imageCaption: 'Field cultivation of commercial pineapple.'
+      imageCaption: 'Pineapple rows beneath the estate canopy.',
     },
     {
       name: 'Cocoa Plantation',
@@ -25,8 +24,6 @@ export default function Cultivation() {
         { label: 'Canopy Placement', value: 'Lower-tier shaded understory' },
         { label: 'Growth Habit', value: 'Cauliflorous trunk fruiting' }
       ],
-      imageTitle: 'Cocoa Pods & Trunk Growth',
-      imageCaption: 'Shade-grown cocoa beneath plantation canopy.'
     },
     {
       name: 'Areca Nut Plantation',
@@ -36,8 +33,6 @@ export default function Cultivation() {
         { label: 'Regional Role', value: 'Major coastal Karnataka crop' },
         { label: 'Structural Layer', value: 'High vertical canopy crown' }
       ],
-      imageTitle: 'Areca Nut Slender Palms',
-      imageCaption: 'Slender areca palms forming vertical architectural columns.'
     },
     {
       name: 'Bamboo Groves',
@@ -47,13 +42,12 @@ export default function Cultivation() {
         { label: 'Varieties Documented', value: 'Giant, Burmese, Yellow, Buddha’s Belly, Garden' },
         { label: 'Landscape Function', value: 'Shaded walking pathways & windbreaks' }
       ],
-      imageTitle: 'Giant Bamboo Pathways',
-      imageCaption: 'Shaded bamboo grove pathway.'
+      imageCaption: 'Bamboo grove at Soans Farm.',
     }
   ];
 
   return (
-    <div className="cultivation-page">
+    <div>
       {/* Page Hero Header */}
       <PageHero
         category="AGRICULTURE & CULTIVATION"
@@ -69,14 +63,14 @@ export default function Cultivation() {
       />
 
       {/* 01. KEY CROPS & PLANTATIONS */}
-      <section className="section">
-        <div className="container">
+      <section className="relative border-b border-farm-border py-16 md:py-[110px]">
+        <div className="mx-auto w-[90%] max-w-[1400px]">
           <SectionHeading
             number="01. KEY CROPS"
             title="Primary Estate Crops"
             subtitle="Commercial harvest & plantation canopy elements"
           />
-          <div className="editorial-grid grid-2">
+          <div className="grid grid-cols-1 gap-10 lg:grid-cols-2">
             {cropList.map((crop, idx) => (
               <CropPlantFeature
                 key={idx}
@@ -84,8 +78,8 @@ export default function Cultivation() {
                 category={crop.category}
                 description={crop.description}
                 specs={crop.specs}
-                imageTitle={crop.imageTitle}
                 imageCaption={crop.imageCaption}
+                imageSrc={crop.imageSrc}
               />
             ))}
           </div>
@@ -93,32 +87,32 @@ export default function Cultivation() {
       </section>
 
       {/* 02. OTHER AGRICULTURAL ACTIVITIES */}
-      <section className="section section-surface">
-        <div className="container">
+      <section className="relative border-b border-farm-border bg-farm-surface py-16 md:py-[110px]">
+        <div className="mx-auto w-[90%] max-w-[1400px]">
           <SectionHeading
             number="02. BROADER OUTPUT"
             title="Other Agricultural Activities & Spices"
             subtitle="Tropical fruits, spices, cereals, and nursery material"
           />
-          <div className="editorial-grid grid-3">
-            <div className="activity-card">
-              <span className="tag-label">TROPICAL FRUITS</span>
-              <h4>Exotic Tropical Fruit Trees</h4>
-              <p>
+          <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="border border-farm-border bg-farm-card p-8">
+              <span className="mb-5 inline-flex items-center gap-3 font-body text-xs uppercase tracking-[0.2em] text-farm-gold before:inline-block before:h-px before:w-6 before:bg-farm-gold">TROPICAL FRUITS</span>
+              <h4 className="mb-3 font-editorial text-[1.4rem] text-farm-cream">Exotic Tropical Fruit Trees</h4>
+              <p className="text-[0.9rem] text-farm-stone">
                 Rambutan, mangosteen, durian, langsat, longan, dragon fruit, jaboticaba, abiu, and miracle fruit species.
               </p>
             </div>
-            <div className="activity-card">
-              <span className="tag-label">SPICE CULTIVATION</span>
-              <h4>Documented Estate Spices</h4>
-              <p>
+            <div className="border border-farm-border bg-farm-card p-8">
+              <span className="mb-5 inline-flex items-center gap-3 font-body text-xs uppercase tracking-[0.2em] text-farm-gold before:inline-block before:h-px before:w-6 before:bg-farm-gold">SPICE CULTIVATION</span>
+              <h4 className="mb-3 font-editorial text-[1.4rem] text-farm-cream">Documented Estate Spices</h4>
+              <p className="text-[0.9rem] text-farm-stone">
                 Black pepper vines, vanilla, nutmeg, cinnamon, clove, and allspice cultivated within shaded crop plots.
               </p>
             </div>
-            <div className="activity-card">
-              <span className="tag-label">NURSERY PROPAGATION</span>
-              <h4>Planting & Propagation Material</h4>
-              <p>
+            <div className="border border-farm-border bg-farm-card p-8">
+              <span className="mb-5 inline-flex items-center gap-3 font-body text-xs uppercase tracking-[0.2em] text-farm-gold before:inline-block before:h-px before:w-6 before:bg-farm-gold">NURSERY PROPAGATION</span>
+              <h4 className="mb-3 font-editorial text-[1.4rem] text-farm-cream">Planting & Propagation Material</h4>
+              <p className="text-[0.9rem] text-farm-stone">
                 Nursery-propagated material for fruit trees, ornamental plants, bamboo varieties, and medicinal herbs.
               </p>
             </div>
@@ -129,17 +123,17 @@ export default function Cultivation() {
 
       {/* 03. BAMBOO GROVE — OXYGEN PARK */}
       
-      <section className="section section-surface">
-        <div className="container">
+      <section className="relative border-b border-farm-border bg-farm-surface py-16 md:py-[110px]">
+        <div className="mx-auto w-[90%] max-w-[1400px]">
           <SectionHeading
             number="03. BAMBOO COLLECTION"
             title="The Oxygen Park"
             subtitle="Bamboo, botanical diversity, and a connection to place"
           />
 
-          <div className="editorial-grid grid-asymmetric-left">
+          <div className="grid grid-cols-1 gap-12 lg:grid-cols-[1fr_1.6fr]">
             <div>
-              <p className="lead">
+              <p className="text-[clamp(1.15rem,1.8vw,1.35rem)] font-light leading-relaxed text-farm-cream">
                 At Soans Farm, the bamboo grove—known as the Oxygen Park—
                 brings together approximately 55 varieties of bamboo in a
                 distinctive botanical collection.
@@ -164,35 +158,12 @@ export default function Cultivation() {
             </div>
 
             <div>
-              <PlaceholderImage
-                aspectRatio="16-9"
-                title="The Bamboo Grove"
-                category="THE OXYGEN PARK"
-                caption="A collection of approximately 55 bamboo varieties at Soans Farm."
-              />
+              <ImageFigure src="/bamboo1.jpg" alt="Bamboo grove at Soans Farm" caption="A collection of approximately 55 bamboo varieties at Soans Farm." />
             </div>
           </div>
         </div>
       </section>
       
-      <style>{`
-        .activity-card {
-          background-color: var(--bg-card);
-          border: 1px solid var(--border-subtle);
-          padding: 2rem;
-        }
-
-        .activity-card h4 {
-          font-family: var(--font-serif);
-          font-size: 1.4rem;
-          margin-bottom: 0.75rem;
-        }
-
-        .activity-card p {
-          font-size: 0.9rem;
-          color: var(--text-secondary);
-        }
-      `}</style>
     </div>
   );
 }
