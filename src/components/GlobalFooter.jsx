@@ -12,8 +12,8 @@ export default function GlobalFooter() {
         <div className="grid grid-cols-2 gap-8 border-b border-farm-border pb-14 md:grid-cols-[1.4fr_1fr_1fr_1fr] md:gap-12">
           <div className="col-span-2 md:col-span-1">
             <Link to="/" className="mb-1 inline-block font-editorial text-[1.8rem] tracking-[0.12em] text-farm-cream">SOANS FARM</Link>
-            <p className="mb-5 text-xs uppercase tracking-[0.15em] text-farm-gold">Agricultural Estate & Botanical Collection</p>
-            <p className="text-[0.9rem] leading-relaxed text-farm-stone">Established agricultural Farm.</p>
+            <p className="mb-5 text-xs uppercase tracking-[0.15em] text-farm-gold">Agricultural Farm & Botanical Collection</p>
+           
           </div>
           <div>
             <h4 className={heading}>THE FARM</h4>

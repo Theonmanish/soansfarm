@@ -20,7 +20,7 @@ export default function Products() {
       description: 'One of the most consistently associated products linking the farm’s primary harvest to direct consumption for visiting guests.',
       specs: [
         { label: 'Source', value: '100% Farm-grown pineapple harvest' },
-        { label: 'Character', value: 'Freshly extracted estate juice' }
+        { label: 'Character', value: 'Freshly extracted farm juice' }
       ],
     },
     {
@@ -35,7 +35,7 @@ export default function Products() {
     {
       name: 'Nursery Plants & Planting Material',
       category: 'HORTICULTURAL PROPAGATION',
-      description: 'Propagation material for fruit trees, ornamental plants, bamboo varieties, herbs, and medicinal plants produced in the estate nursery.',
+      description: 'Propagation material for fruit trees, ornamental plants, bamboo varieties, herbs, and medicinal plants produced in the farm nursery.',
       specs: [
         { label: 'Plant Types', value: 'Fruit saplings, Bamboo clumps, Medicinal herbs' },
         { label: 'Availability', value: 'Varies by propagation season' }
@@ -49,13 +49,13 @@ export default function Products() {
       <PageHero
         category="AGRICULTURAL OUTPUT"
         routeNum="06"
-        title="Products & Estate Yield"
-        subtitle="Fresh fruits, estate juice, spices, and horticultural nursery plants"
+        title="Products & Farm Yield"
+        subtitle="Fresh fruits, farm juice, spices, and horticultural nursery plants"
         leadText="Soans Farm produces a range of agricultural output spanning commercial fruits, fresh farm juice, shade-grown spices, and propagated nursery material for growers and plant enthusiasts."
         metaTags={[
           { key: 'PRIMARY PRODUCE', value: 'FRESH PINEAPPLE & SEASONAL FRUITS' },
           { key: 'EXTRACTED PRODUCE', value: 'FARM FRESH PINEAPPLE JUICE' },
-          { key: 'SPICES & NURSERY', value: 'ESTATE SPICES & PLANTING MATERIAL' }
+          { key: 'SPICES & NURSERY', value: 'SPICES' }
         ]}
       />
 
@@ -64,8 +64,8 @@ export default function Products() {
         <div className="mx-auto w-[90%] max-w-[1400px]">
           <SectionHeading
             number="01. YIELD OVERVIEW"
-            title="Estate Produce & Output"
-            subtitle="Agricultural output generated across estate cultivation zones"
+            title="Farm Produce & Output"
+            subtitle="Agricultural output generated across farm cultivation zones"
           />
           <div className="grid grid-cols-1 gap-10 lg:grid-cols-2">
             {productOutput.map((item, idx) => (

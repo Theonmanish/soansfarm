@@ -70,7 +70,7 @@ export default function BotanicalGarden() {
           />
           <EditorialBlock
             title="Horticultural Experimentation & Learning"
-            lead="The botanical collection serves several complementary purposes across the estate."
+            lead="The botanical collection serves several complementary purposes across the farm."
             body={[
               "It supports ongoing agricultural experimentation, preserves unusual tropical plants, provides fruit and plantation crops, develops nursery material, and serves as an informal setting for botanical observation and learning.",
               "Rather than a formal manicured public park, the collection exists organically within the working agricultural framework."

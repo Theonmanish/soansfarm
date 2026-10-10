@@ -9,12 +9,12 @@ export default function Cultivation() {
     {
       name: 'Pineapple Plantation',
       category: 'PRIMARY COMMERCIAL CROP',
-      description: 'The crop most closely associated with the estate, cultivated as commercial produce within the mixed agricultural landscape. Fresh farm products and juice are part of the visitor experience.',
+      description: 'The crop most closely associated with the farm, cultivated as commercial produce within the mixed agricultural landscape. Fresh farm products and juice are part of the visitor experience.',
       specs: [
         { label: 'Cultivation Style', value: 'Open field & inter-cropped beds' },
         { label: 'Heritage', value: 'Introduced systematically in late 1920s' }
       ],
-      imageCaption: 'Pineapple rows beneath the estate canopy.',
+      imageCaption: 'Pineapple rows beneath the farm canopy.',
     },
     {
       name: 'Cocoa Plantation',
@@ -67,7 +67,7 @@ export default function Cultivation() {
         <div className="mx-auto w-[90%] max-w-[1400px]">
           <SectionHeading
             number="01. KEY CROPS"
-            title="Primary Estate Crops"
+            title="Primary farm Crops"
             subtitle="Commercial harvest & plantation canopy elements"
           />
           <div className="grid grid-cols-1 gap-10 lg:grid-cols-2">
@@ -104,7 +104,7 @@ export default function Cultivation() {
             </div>
             <div className="border border-farm-border bg-farm-card p-8">
               <span className="mb-5 inline-flex items-center gap-3 font-body text-xs uppercase tracking-[0.2em] text-farm-gold before:inline-block before:h-px before:w-6 before:bg-farm-gold">SPICE CULTIVATION</span>
-              <h4 className="mb-3 font-editorial text-[1.4rem] text-farm-cream">Documented Estate Spices</h4>
+              <h4 className="mb-3 font-editorial text-[1.4rem] text-farm-cream">Farm Spices</h4>
               <p className="text-[0.9rem] text-farm-stone">
                 Black pepper vines, vanilla, nutmeg, cinnamon, clove, and allspice cultivated within shaded crop plots.
               </p>
@@ -151,7 +151,7 @@ export default function Cultivation() {
               <p>
                 The collection at Soans Farm offers a contemporary connection
                 to that heritage. With its varied forms, heights, and growth
-                patterns, bamboo adds botanical richness to the estate while
+                patterns, bamboo adds botanical richness to the farm while
                 demonstrating the diversity of a plant group valued for its
                 rapid growth, versatility, and role in carbon storage.
               </p>

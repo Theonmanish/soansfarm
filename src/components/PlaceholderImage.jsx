@@ -15,7 +15,7 @@ export default function PlaceholderImage({ aspectRatio = '16-9', title = 'Estate
         <div className="absolute inset-0 flex flex-col justify-between border-b border-white/5 bg-[radial-gradient(circle_at_50%_50%,rgba(19,23,19,0.2)_0%,rgba(11,11,10,0.85)_100%)] p-8">
           <div className="flex items-center justify-between font-body text-[0.7rem] uppercase tracking-[0.15em] text-farm-muted">
             <span className="text-[0.65rem] tracking-[0.2em] text-farm-gold">{category}</span>
-            <span>SOANS ESTATE ARCHIVE</span>
+            <span>SOANS FARM ARCHIVE</span>
           </div>
           <div className="m-auto text-center">
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--color-farm-gold)" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="mx-auto opacity-50">

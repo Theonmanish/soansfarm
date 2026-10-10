@@ -12,7 +12,7 @@ export default function ExperienceFeature({ num = '01', title = 'Experience Titl
           <h3 className="mb-4 font-editorial text-[2rem] leading-tight text-farm-cream">{title}</h3>
           {description && <p className="mb-6 text-[1.05rem] font-light leading-[1.7] text-farm-stone">{description}</p>}
           {highlights.length > 0 && <div className="border-t border-farm-border pt-4">
-            <span className="mb-2 block text-[0.65rem] uppercase tracking-[0.2em] text-farm-gold">ESTATE ELEMENTS</span>
+            <span className="mb-2 block text-[0.65rem] uppercase tracking-[0.2em] text-farm-gold">FARM ELEMENTS</span>
             <ul className="m-0 flex list-none flex-col gap-2 p-0 text-sm text-farm-muted">
               {highlights.map((item, idx) => <li key={idx}>▪ {item}</li>)}
             </ul>

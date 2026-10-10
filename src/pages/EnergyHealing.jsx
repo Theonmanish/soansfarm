@@ -117,7 +117,7 @@ export default function EnergyHealing() {
             reverse={false}
             body={[
               "Medicine Wheels are not a single, universal design. Their meanings differ among Indigenous peoples, and some have cultural or spiritual significance that should be understood within their specific traditions.",
-              "The structure at Soans Farm reflects an interest in these traditional forms and in the use of circular patterns to create a defined space for contemplation. Its presence forms part of the estate's broader collection of structures inspired by historical and cultural ideas about place.",
+              "The structure at Soans Farm reflects an interest in these traditional forms and in the use of circular patterns to create a defined space for contemplation. Its presence forms part of the farm's broader collection of structures inspired by historical and cultural ideas about place.",
               "Visitors can experience the space quietly and respectfully, taking time to observe its form and consider the many ways people across cultures have given meaning to the landscapes and places around them.",
             ]}
           />
