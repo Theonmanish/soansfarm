@@ -1,62 +1,72 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
+
+const currentYear = new Date().getFullYear();
 
 export default function GlobalFooter() {
   return (
     <footer className="global-footer">
       <div className="container">
-        {/* Main Footer Architectural Grid */}
-        <div className="footer-top grid-4">
-          {/* Column 1: Identity & Context */}
+        <div className="footer-top">
+          {/* Column 1: Identity */}
           <div className="footer-col brand-col">
-            <h3 className="footer-brand-title">SOANS FARM</h3>
+            <Link to="/" className="footer-brand-title">
+              SOANS FARM
+            </Link>
+
             <p className="footer-brand-tagline">
               Agricultural Estate & Botanical Collection
             </p>
+
             <p className="footer-location-note">
-              Established agricultural landscape situated in the Moodbidri region of coastal Karnataka, India.
+              Established agricultural Farm.
             </p>
           </div>
 
-          {/* Column 2: Estate Navigation */}
+          {/* Column 2: Farm */}
           <div className="footer-col">
-            <h4 className="footer-heading">THE ESTATE</h4>
+            <h4 className="footer-heading">THE FARM</h4>
             <ul className="footer-nav">
+              <li><Link to="/">Home</Link></li>
               <li><Link to="/the-farm">The Farm & Heritage</Link></li>
               <li><Link to="/the-land">The Land & Environment</Link></li>
               <li><Link to="/cultivation">Agricultural Cultivation</Link></li>
               <li><Link to="/botanical-garden">Botanical Collection</Link></li>
-              <li><Link to="/experiences">Estate Experiences</Link></li>
             </ul>
           </div>
 
-          {/* Column 3: Discovery & Output */}
+          {/* Column 3: Discovery */}
           <div className="footer-col">
-            <h4 className="footer-heading">DISCOVERY</h4>
+            <h4 className="footer-heading">DISCOVER</h4>
             <ul className="footer-nav">
-              <li><Link to="/products">Estate Products</Link></li>
+              <li><Link to="/experiences">Farm Experiences</Link></li>
+              <li><Link to="/explore">Explore Farm</Link></li>
+              <li><Link to="/energy-healing">Energy & Reflection</Link></li>
+              <li><Link to="/products">Farm Products</Link></li>
+              <li><Link to="/journal">Journal</Link></li>
               <li><Link to="/visit">Visiting Information</Link></li>
+              <li><Link to="/#contact">Contact</Link></li>
             </ul>
           </div>
 
-          {/* Column 4: Regional Placement */}
+          {/* Column 4: Location */}
           <div className="footer-col">
             <h4 className="footer-heading">LOCATION CONTEXT</h4>
             <p className="footer-meta-text">
-              Moodbidri, Dakshina Kannada District<br />
+              Moodbidri, Dakshina Kannada District
+              <br />
               Coastal Karnataka, India
             </p>
-            
           </div>
         </div>
 
-        {/* Footer Bottom Bar */}
+        {/* Copyright */}
         <div className="footer-bottom">
-          <p>© {new Date().getFullYear()} SOANS FARM. ALL RIGHTS RESERVED.</p>
+          <p>© {currentYear} SOANS FARM. ALL RIGHTS RESERVED.</p>
          
         </div>
       </div>
-
       <style>{`
         .global-footer {
           background-color: var(--bg-surface);
@@ -66,12 +76,15 @@ export default function GlobalFooter() {
         }
 
         .footer-top {
+          display: grid;
+          grid-template-columns: 1.4fr 1fr 1fr 1fr;
           padding-bottom: 60px;
           border-bottom: 1px solid var(--border-subtle);
           gap: 3rem;
         }
 
         .footer-brand-title {
+          display: inline-block;
           font-family: var(--font-serif);
           font-size: 1.8rem;
           letter-spacing: 0.12em;
@@ -147,7 +160,7 @@ export default function GlobalFooter() {
 
         .footer-bottom {
           display: flex;
-          justify-content: space-between;
+          justify-content: center;
           align-items: center;
           padding-top: 30px;
           font-size: 0.75rem;
@@ -161,6 +174,14 @@ export default function GlobalFooter() {
         }
 
         @media (max-width: 768px) {
+          .footer-top {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+          }
+
+          .brand-col {
+            grid-column: 1 / -1;
+          }
+
           .footer-bottom {
             flex-direction: column;
             gap: 1rem;

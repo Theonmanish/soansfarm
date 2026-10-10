@@ -1,8 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Compass, ArrowDown, ChevronRight, ExternalLink } from 'lucide-react';
+import { ChevronRight } from 'lucide-react';
 import PlaceholderImage from '../components/PlaceholderImage';
 import SectionHeading from '../components/SectionHeading';
+
 
 export default function Home() {
   return (
@@ -13,19 +14,19 @@ export default function Home() {
           <PlaceholderImage
             aspectRatio="21-9"
             title="Soans Farm — Moodbidri Landscape"
-            category="AGRICULTURAL ESTATE ARCHIVE"
+            category="AGRICULTURAL Farm ARCHIVE"
             fullBleed={true}
           />
         </div>
         <div className="container hero-content-container">
           <div className="hero-text-wrapper">
-            <span className="tag-label">ESTATE OVERVIEW</span>
+            <span className="tag-label">Farm OVERVIEW</span>
             <h1 className="hero-main-title">SOANS FARM</h1>
             <p className="hero-intro-statement">
               A World Of Horticultural And Botanical Diversity
             </p>
             <p className="lead">
-              A long-established agricultural estate, horticultural collection, and diverse cultivated landscape in coastal Karnataka.
+              A long-established agricultural farm, horticultural collection, and diverse cultivated landscape in coastal Karnataka.
             </p>
 
 
@@ -41,22 +42,22 @@ export default function Home() {
           <div className="editorial-grid grid-asymmetric-left">
             <div className="intro-text">
               <SectionHeading
-                number="01. ESTATE IDENTITY"
+                number="01. farm IDENTITY"
                 title="A Working Agricultural Landscape"
                 subtitle="Decades of horticultural experimentation & cultivation"
               />
               <p className="lead">
-                Soans Farm functions as a working agricultural estate, combining commercial plantations, fruit cultivation, plant collections, nursery activity, bamboo groves, and distinctive walking labyrinths.
+                Soans Farm functions as a working agricultural farm, combining commercial plantations, fruit cultivation, plant collections, nursery activity, bamboo groves, and distinctive walking labyrinths.
               </p>
               <p style={{ marginTop: '1rem' }}>
-                Developed over decades, the estate brings together productive agriculture and an extensive living botanical collection in coastal Karnataka.
+                Developed over decades, the farm brings together productive agriculture and an extensive living botanical collection in coastal Karnataka.
               </p>
             </div>
             <div className="intro-visual">
               <PlaceholderImage
                 aspectRatio="4-3"
-                title="Estate Overview Visual"
-                category="ESTATE COMPOSITION"
+                title="Farm Overview Visual"
+                category="Farm COMPOSITION"
                 caption="Layered agricultural canopy and plantation topography."
               />
             </div>
@@ -64,26 +65,26 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 3. THE FARM / HISTORY SECTION */}
+      {/* 3. THE Farm / HISTORY SECTION */}
       <section className="section">
         <div className="container">
           <div className="editorial-grid grid-asymmetric-right">
-            <div className="farm-visual">
+            <div className="Farm-visual">
               <PlaceholderImage
                 aspectRatio="3-4"
                 title="Archival Heritage Visual"
                 category="HISTORICAL ARCHIVE"
-                caption="Archival representation of estate development."
+                caption="Archival representation of Farm development."
               />
             </div>
-            <div className="farm-text">
+            <div className="Farm-text">
               <SectionHeading
                 number="02. HERITAGE & PHILOSOPHY"
                 title="The Farm & Agricultural Legacy"
                 subtitle="Rooted in practical stewardship and crop diversity"
               />
               <p className="lead">
-                The estate's identity has been shaped by generations of agricultural practice, testing fruit species from diverse tropical regions and integrating traditional and alternative structures into the landscape.
+                The Farm's identity has been shaped by generations of agricultural practice, testing fruit species from diverse tropical regions and integrating traditional and alternative structures into the landscape.
               </p>
               <div style={{ marginTop: '2rem', display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
                 <Link to="/the-farm#history" className="btn-editorial">
@@ -100,42 +101,72 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 4. THE LAND SECTION */}
+
+      {/* 4. BOTANICAL GARDEN SECTION */}
       <section className="section section-surface">
         <div className="container">
-          <SectionHeading
-            number="03. ENVIRONMENT"
-            title="The Land & Microclimate"
-            subtitle="Topography, rainfall, and vertical crop layering"
-          />
-          <div className="editorial-grid grid-asymmetric-left">
+          <div className="editorial-grid grid-asymmetric-right">
+            
             <div>
+              <SectionHeading
+                number="03. BOTANICAL COLLECTION"
+                title="Decades of Plant Diversity"
+                subtitle="An informal setting for horticultural study"
+              />
               <p className="lead">
-                Situated in the rolling, hilly terrain of coastal Karnataka, the farm experiences monsoon rainfall followed by warm tropical growing seasons.
+                Developed gradually over decades, the living plant collection encompasses commercial fruit crops, exotic tropical species, spices, bamboo varieties, and medicinal herbs.
               </p>
               <p style={{ marginTop: '1rem' }}>
-                Open pineapple fields, tall plantation palms, shade-associated crops, fruit trees, and bamboo groves coexist in a multi-layered canopy structure.
+                The collection supports agricultural experimentation while preserving rare specimens and providing planting material for propagation.
               </p>
               <div style={{ marginTop: '2rem' }}>
-                <Link to="/the-land" className="btn-editorial">
-                  <span>EXPLORE LANDSCAPE & CLIMATE</span>
-                  <ChevronRight size={14} />
-                </Link>
+                <a
+                  href="https://tour.soansfarm.in"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-editorial btn-gold"
+                >
+                  <span>EXPLORE PLANT CATALOGUE</span>
+
+                </a>
               </div>
             </div>
             <div>
               <PlaceholderImage
-                aspectRatio="16-9"
-                title="Landscape Topography"
-                category="ENVIRONMENT RECORD"
-                caption="Multi-tiered agricultural canopy."
+                aspectRatio="1-1"
+                title="Botanical Specimen Record"
+                category="LIVING COLLECTION"
+                caption="Documented tropical botanical collection."
               />
             </div>
           </div>
         </div>
       </section>
 
-      {/* 5. CULTIVATION SECTION — SEAMLESS EDITORIAL SPREAD */}
+      {/* 5. EXPLORE THE Farm TRANSITION */}
+      <section className="section section-surface transition-section">
+        <div className="container text-center-wrapper">
+          <span className="tag-label">INTERACTIVE MAP & CATALOGUE</span>
+          <h2>Explore the Virtual Tour & Farm Map</h2>
+          <p className="lead" style={{ maxWidth: '720px', margin: '1rem auto 2.5rem' }}>
+            Access the official Soans Farm spatial directory and plant catalogue.
+          </p>
+          <a
+            href="https://tour.soansfarm.in"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-editorial btn-gold"
+          >
+
+            <span>ENTER TOUR.SOANSFarm.IN</span>
+
+          </a>
+        </div>
+      </section>
+
+
+
+      {/* 6. CULTIVATION SECTION — SEAMLESS EDITORIAL SPREAD */}
       <section className="section">
         <div className="container">
           <SectionHeading
@@ -148,7 +179,7 @@ export default function Home() {
               <PlaceholderImage aspectRatio="4-3" title="Pineapple Plantation" category="KEY CROP" />
               <div className="seamless-body">
                 <h4>Pineapple Plantation</h4>
-                <p>Commercial produce closely associated with the long-term identity of the estate.</p>
+                <p>Commercial produce closely associated with the long-term identity of the Farm.</p>
               </div>
             </div>
 
@@ -177,71 +208,27 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 6. BOTANICAL GARDEN SECTION */}
-      <section className="section section-surface">
-        <div className="container">
-          <div className="editorial-grid grid-asymmetric-right">
-            <div>
-              <PlaceholderImage
-                aspectRatio="1-1"
-                title="Botanical Specimen Record"
-                category="LIVING COLLECTION"
-                caption="Documented tropical botanical collection."
-              />
-            </div>
-            <div>
-              <SectionHeading
-                number="05. BOTANICAL COLLECTION"
-                title="Decades of Plant Diversity"
-                subtitle="An informal setting for horticultural study"
-              />
-              <p className="lead">
-                Developed gradually over decades, the living plant collection encompasses commercial fruit crops, exotic tropical species, spices, bamboo varieties, and medicinal herbs.
-              </p>
-              <p style={{ marginTop: '1rem' }}>
-                The collection supports agricultural experimentation while preserving rare specimens and providing planting material for propagation.
-              </p>
-              <div style={{ marginTop: '2rem' }}>
-                <a
-                  href="https://tour.soansfarm.in"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn-editorial btn-gold"
-                >
-                  <span>EXPLORE PLANT CATALOGUE</span>
 
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* 7. EXPERIENCES SECTION */}
       <section className="section">
         <div className="container">
           <SectionHeading
-            number="06. VISITOR ELEMENTS"
-            title="Estate Experiences & Walks"
+            number="05. VISITOR ELEMENTS"
+            title="Farm Experiences & Walks"
             subtitle="Walks, plant observations, and labyrinth"
           />
-          <div className="editorial-grid grid-2">
+          
             <div className="exp-block-seamless">
-              <PlaceholderImage aspectRatio="16-9" title="Plantation Trails" category="ESTATE WALK" />
+              <PlaceholderImage aspectRatio="16-9" title="Plantation Trails" category="Farm WALK" />
               <div className="seamless-body">
                 <h4>Plantation & Crop Trails</h4>
                 <p>Self-guided pathway exploration across multi-crop arrangements and shade canopies.</p>
               </div>
             </div>
 
-            <div className="exp-block-seamless">
-              <PlaceholderImage aspectRatio="16-9" title="Labyrinth" category="REFLECTIVE ARCHITECTURE" />
-              <div className="seamless-body">
-                <h4>Labyrinth</h4>
-                <p>Distinctive Cretan and French cathedral design single-path labyrinths for concentration.</p>
-              </div>
-            </div>
-          </div>
+            
+          
           <div style={{ marginTop: '3rem', textAlign: 'center' }}>
             <Link to="/experiences" className="btn-editorial">
               <span>EXPLORE ALL VISITOR EXPERIENCES</span>
@@ -251,34 +238,62 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 8. EXPLORE THE ESTATE TRANSITION */}
-      <section className="section section-surface transition-section">
-        <div className="container text-center-wrapper">
-          <span className="tag-label">INTERACTIVE MAP & CATALOGUE</span>
-          <h2>Explore the Virtual Tour & Estate Map</h2>
-          <p className="lead" style={{ maxWidth: '720px', margin: '1rem auto 2.5rem' }}>
-            Access the official Soans Farm spatial directory and plant catalogue.
-          </p>
-          <a
-            href="https://tour.soansfarm.in"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-editorial btn-gold"
-          >
+      
 
-            <span>ENTER TOUR.SOANSFARM.IN</span>
+      
+      {/* 8. ENERGY HEALING SECTION */}
+      <section className="section section-surface">
+        <div className="container">
+          <SectionHeading
+            number="06. ENERGY & REFLECTION"
+            title="Spaces for Stillness"
+            subtitle="Labyrinths, ancient patterns, and contemplative spaces"
+          />
 
-          </a>
+          <div className="editorial-grid grid-asymmetric-left">
+            <div>
+              <p className="lead">
+                Beyond its agricultural and botanical collections, Soans Farm
+                features distinctive structures inspired by traditional patterns,
+                sacred geometry, and contemplative practices.
+              </p>
+
+              <p style={{ marginTop: '1rem' }}>
+                From the winding pathways of its labyrinths to the Medicine Wheel,
+                pyramid, and spiral patterns, these spaces invite visitors to slow
+                down, explore their cultural associations, and experience the
+                landscape through quiet walking and reflection.
+              </p>
+
+              <div style={{ marginTop: '2rem' }}>
+                <Link to="/energy-healing" className="btn-editorial">
+                  <span>EXPLORE ENERGY & REFLECTION</span>
+                  <ChevronRight size={14} />
+                </Link>
+              </div>
+            </div>
+
+            <div>
+              <PlaceholderImage
+                aspectRatio="16-9"
+                title="Labyrinth & Contemplative Spaces"
+                category="ENERGY & REFLECTION"
+                caption="Distinctive patterns and spaces within the estate."
+              />
+            </div>
+          </div>
         </div>
       </section>
 
+      
+      
       {/* 9. CONTACT SECTION */}
 
       <section className="section" id="contact">
         <div className="container">
           <SectionHeading
-            number="07. CONTACT"
-            title="VISIT SOANS FARM"
+            number="08. CONTACT"
+            title="Visit Soans Farm"
           />
 
           <div className="editorial-grid grid-3">
@@ -306,11 +321,11 @@ export default function Home() {
                     marginBottom: '1rem'
                   }}
                 >
-                  Follow Soans Farm for updates from the estate.
+                  Follow Soans Farm for updates from the Farm.
                 </p>
 
                 <a
-                  href="https://www.instagram.com/soansfarm?xtok=MXZkOGx0bHN1MHQ1NQ%3D%3D"
+                  href="https://www.instagram.com/soansFarm?xtok=MXZkOGx0bHN1MHQ1NQ%3D%3D"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{
@@ -320,7 +335,7 @@ export default function Home() {
                     textDecoration: 'none'
                   }}
                 >
-                  @soansfarm ↗
+                  @soansFarm ↗
                 </a>
               </div>
             </div>

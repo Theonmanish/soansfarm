@@ -2,7 +2,7 @@ import React from 'react';
 import PageHero from '../components/PageHero';
 import SectionHeading from '../components/SectionHeading';
 import CropPlantFeature from '../components/CropPlantFeature';
-import FullWidthImageSection from '../components/FullWidthImageSection';
+import PlaceholderImage from '../components/PlaceholderImage';
 
 export default function Cultivation() {
   const cropList = [
@@ -126,13 +126,55 @@ export default function Cultivation() {
         </div>
       </section>
 
-      {/* 03. CLOSING VISUAL SECTION */}
-      <FullWidthImageSection
-        title="Plantation Canopy Visual — Soans Farm"
-        category="AGRICULTURAL ARCHIVE"
-        caption="Visual representation of multi-crop arrangements and seasonal harvests."
-      />
 
+      {/* 03. BAMBOO GROVE — OXYGEN PARK */}
+      
+      <section className="section section-surface">
+        <div className="container">
+          <SectionHeading
+            number="03. BAMBOO COLLECTION"
+            title="The Oxygen Park"
+            subtitle="Bamboo, botanical diversity, and a connection to place"
+          />
+
+          <div className="editorial-grid grid-asymmetric-left">
+            <div>
+              <p className="lead">
+                At Soans Farm, the bamboo grove—known as the Oxygen Park—
+                brings together approximately 55 varieties of bamboo in a
+                distinctive botanical collection.
+              </p>
+
+              <p>
+                Its significance extends beyond the farm. The name Moodbidri
+                is commonly associated with the words <em>Moodu</em>, meaning
+                east, and <em>Bidiru</em>, meaning bamboo. The name is linked
+                to the bamboo that once grew abundantly across the region,
+                reflecting a landscape in which this remarkable grass was
+                part of the area's natural identity.
+              </p>
+
+              <p>
+                The collection at Soans Farm offers a contemporary connection
+                to that heritage. With its varied forms, heights, and growth
+                patterns, bamboo adds botanical richness to the estate while
+                demonstrating the diversity of a plant group valued for its
+                rapid growth, versatility, and role in carbon storage.
+              </p>
+            </div>
+
+            <div>
+              <PlaceholderImage
+                aspectRatio="16-9"
+                title="The Bamboo Grove"
+                category="THE OXYGEN PARK"
+                caption="A collection of approximately 55 bamboo varieties at Soans Farm."
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      
       <style>{`
         .activity-card {
           background-color: var(--bg-card);

@@ -1,10 +1,11 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation, Link } from 'react-router-dom';
 
 // Layout & Global Components
 import GlobalHeader from './components/GlobalHeader';
 import GlobalFooter from './components/GlobalFooter';
 import ScrollToTop from './components/ScrollToTop';
+import PageErrorBoundary from './components/PageErrorBoundary';
 
 // Page Views (11 Primary Routes)
 import Home from './pages/Home';
@@ -17,6 +18,7 @@ import ExploreEstate from './pages/ExploreEstate';
 import Products from './pages/Products';
 import Journal from './pages/Journal';
 import Visit from './pages/Visit';
+import EnergyHealing from './pages/EnergyHealing';
 
 function MainLayout() {
   const location = useLocation();
@@ -31,23 +33,40 @@ function MainLayout() {
 
       {/* Primary Page Route Switch */}
       <main className="app-content">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/the-farm" element={<TheFarm />} />
-          <Route path="/the-land" element={<TheLand />} />
-          <Route path="/cultivation" element={<Cultivation />} />
-          <Route path="/botanical-garden" element={<BotanicalGarden />} />
-          <Route path="/experiences" element={<Experiences />} />
-          <Route path="/explore" element={<ExploreEstate />} />
-          <Route path="/products" element={<Products />} />
-          <Route path="/journal" element={<Journal />} />
-          <Route path="/visit" element={<Visit />} />
-        </Routes>
+        <PageErrorBoundary key={location.pathname}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/the-farm" element={<TheFarm />} />
+            <Route path="/the-land" element={<TheLand />} />
+            <Route path="/cultivation" element={<Cultivation />} />
+            <Route path="/botanical-garden" element={<BotanicalGarden />} />
+            <Route path="/experiences" element={<Experiences />} />
+            <Route path="/explore" element={<ExploreEstate />} />
+            <Route path="/products" element={<Products />} />
+            <Route path="/journal" element={<Journal />} />
+            <Route path="/visit" element={<Visit />} />
+            <Route path="/energy-healing" element={<EnergyHealing />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </PageErrorBoundary>
       </main>
 
       {/* Global Footer (Hidden on interactive map shell page for full viewport experience) */}
       {!isExplorePage && <GlobalFooter />}
     </div>
+  );
+}
+
+function NotFound() {
+  return (
+    <section className="section">
+      <div className="container">
+        <p className="tag-label">404 — PAGE NOT FOUND</p>
+        <h1>We couldn’t find that page.</h1>
+        <p className="lead">The page may have moved, or the address may be incorrect.</p>
+        <Link className="btn-editorial" to="/">Return to the home page</Link>
+      </div>
+    </section>
   );
 }
 

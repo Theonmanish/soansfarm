@@ -10,15 +10,15 @@ export default function Experiences() {
   const expList = [
     {
       num: '01',
-      title: 'Exploring the Estate Pathways',
-      subtitle: 'Self-Guided Estate Walk',
-      description: 'Encounters with mixed plantations, fruit collections, bamboo groves, spice plantings, and nursery areas through walks and estate pathways.',
+      title: 'Exploring the Farm Pathways',
+      subtitle: 'Self-Guided Farm Walk',
+      description: 'Encounters with mixed plantations, fruit collections, bamboo groves, spice plantings, and nursery areas through walks and farm pathways.',
       highlights: [
         'Shaded plantation walking paths',
         'Direct observation of multi-tier canopy agriculture',
         'Seasonal fruit tree observation zones'
       ],
-      imageTitle: 'Estate Pathway Visual'
+      imageTitle: 'Farm Pathway Visual'
     },
     {
       num: '02',
@@ -44,20 +44,9 @@ export default function Experiences() {
       ],
       imageTitle: 'Botanical Collection Walk'
     },
+    
     {
       num: '04',
-      title: 'The Walking Labyrinths',
-      subtitle: 'Reflective Landscape Architecture',
-      description: 'The farm features two prominent walking labyrinths: one based on a French cathedral design, and another based on Cretan labyrinth tradition.',
-      highlights: [
-        'Single continuous winding pathway to centre and back out',
-        'Created in connection with ancient structures and energy concepts',
-        'Quiet, deliberate space for walking, concentration, and reflection'
-      ],
-      imageTitle: 'Labyrinth Pathways'
-    },
-    {
-      num: '05',
       title: 'Educational & Academic Visits',
       subtitle: 'Agricultural Learning',
       description: ' welcoming school and college students, agricultural learners, and travelers interested in tropical horticulture.',
@@ -74,13 +63,13 @@ export default function Experiences() {
     <div className="experiences-page">
       {/* Page Hero Header */}
       <PageHero
-        category="ESTATE VISITS & DISCOVERY"
+        category="FARM VISITS & DISCOVERY"
         routeNum="05"
         title="Visitor Experiences"
-        subtitle="Estate walks, botanical observations, and walking labyrinths"
-        leadText="A visit to Soans Farm offers an introduction to a working tropical agricultural estate rather than an urban botanical garden. Visitors encounter mixed plantations, fruit collections, bamboo groves, spice plantings, and walking labyrinths through estate pathways."
+        subtitle="Farm walks, botanical observations, and walking labyrinths"
+        leadText="A visit to Soans Farm offers an introduction to a working tropical agricultural farm rather than an urban botanical garden. Visitors encounter mixed plantations, fruit collections, bamboo groves, spice plantings, and walking labyrinths through farm pathways."
         metaTags={[
-          { key: 'VISIT TYPE', value: 'WORKING ESTATE WALK & BOTANICAL STUDY' },
+          { key: 'VISIT TYPE', value: 'WORKING FARM WALK & BOTANICAL STUDY' },
           { key: 'DISTINCTIVE ELEMENTS', value: 'FRENCH & CRETAN WALKING LABYRINTHS' },
           { key: 'LEARNING', value: 'EDUCATIONAL VISITS FOR SCHOOLS & LEARNERS' }
         ]}
@@ -91,7 +80,7 @@ export default function Experiences() {
         <div className="container">
           <SectionHeading
             number="01. ELEMENTS"
-            title="Distinctive Estate Visitor Elements"
+            title="Distinctive farm Visitor Elements"
             subtitle="Walks, plant study, and reflective spaces"
           />
           {expList.map((item, idx) => (
@@ -112,7 +101,7 @@ export default function Experiences() {
       <section className="section section-surface text-center-wrapper">
         <div className="container" style={{ maxWidth: '720px', margin: '0 auto', textAlign: 'center' }}>
           <span className="tag-label">VISITOR GUIDELINES</span>
-          <h2>Plan Your Estate Visit</h2>
+          <h2>Plan Your farm Visit</h2>
           <p className="lead" style={{ margin: '1rem 0 2rem' }}>
             Review practical information and location context for visiting Soans Farm in coastal Karnataka.
           </p>
@@ -125,9 +114,9 @@ export default function Experiences() {
 
       {/* CLOSING VISUAL SECTION */}
       <FullWidthImageSection
-        title="Estate Pathway Landscape Visual"
+        title="farm Pathway Landscape Visual"
         category="EXPERIENCE ARCHIVE"
-        caption="Shaded walking pathway through estate bamboo and plantation canopy."
+        caption="Shaded walking pathway through farm bamboo and plantation canopy."
       />
     </div>
   );

@@ -43,7 +43,7 @@ export default function TheFarm() {
         <div className="container">
           <SectionHeading
             number="01. OVERVIEW"
-            title="An Estate Shaped by Cultivation"
+            title="A Farm Shaped by Cultivation"
             subtitle="Agricultural production and botanical diversity"
           />
 
@@ -85,7 +85,7 @@ export default function TheFarm() {
 
           <EditorialBlock
             number="AFTER 1947 — EXPANSION & DIVERSIFICATION"
-            title="Building a Diverse Agricultural Estate"
+            title="Building a Diverse Agricultural Farm"
             lead="Following India's independence, improvements in agricultural practices created opportunities for the estate to expand and diversify."
             body={[
               "Mechanisation and improved irrigation supported the development of cultivated land. Pineapple remained a major crop, while mango, sapota, pepper, cinnamon, nutmeg, cocoa, cashew, coconut, and vanilla broadened the estate’s agricultural output.",

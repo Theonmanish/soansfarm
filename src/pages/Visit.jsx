@@ -62,8 +62,8 @@ export default function Visit() {
               <p>Observe rare tropical fruit trees, exotic specimen plantings, and bamboo varieties.</p>
             </div>
             <div className="visit-card">
-              <span className="tag-label">WALKING LABYRINTHS</span>
-              <h4>Walking Labyrinths</h4>
+              <span className="tag-label">LABYRINTH</span>
+              <h4>Labyrinth</h4>
               <p>Walk the single continuous winding paths of the Cretan and French cathedral labyrinths.</p>
             </div>
           </div>

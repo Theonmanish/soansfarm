@@ -22,7 +22,7 @@ export default function GlobalHeader() {
 
         <div className="floating-nav-divider"></div>
 
-        {/* Primary Desktop Nav Links (ONLY 4 LINKS) */}
+        {/* Primary Desktop Nav Links */}
         <ul className="floating-nav-list desktop-only">
           <li>
             <Link to="/" className={`floating-nav-link ${isCurrentActive('/') ? 'active' : ''}`}>
@@ -39,6 +39,12 @@ export default function GlobalHeader() {
               Philosophy
             </Link>
           </li>
+          <li>
+            <Link to="/#contact" className={`floating-nav-link ${location.pathname === '/' && location.hash === '#contact' ? 'active' : ''}`}>
+              Contact
+            </Link>
+          </li>
+          
           <li>
             <a
               href="https://tour.soansfarm.in"
@@ -79,6 +85,11 @@ export default function GlobalHeader() {
             <li>
               <Link to="/the-farm#philosophy" onClick={() => setIsMobileOpen(false)}>
                 Philosophy
+              </Link>
+            </li>
+            <li>
+              <Link to="/#contact" onClick={() => setIsMobileOpen(false)} className={location.pathname === '/' && location.hash === '#contact' ? 'active' : ''}>
+                Contact
               </Link>
             </li>
             <li>
