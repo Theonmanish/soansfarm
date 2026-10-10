@@ -18,8 +18,14 @@ export default function GlobalHeader() {
   const activeClass = 'text-farm-cream';
 
   return (
-    <header className="pointer-events-none fixed left-1/2 top-4 z-[1000] w-max max-w-[calc(100vw-2rem)] -translate-x-1/2 md:top-6 md:max-w-[90vw]">
-      <nav className="pointer-events-auto flex w-max max-w-full items-center justify-between gap-3 rounded-full border border-white/10 bg-[rgba(11,11,10,0.85)] px-3 py-2 shadow-[0_8px_32px_rgba(0,0,0,0.4)] backdrop-blur-2xl transition-all sm:gap-4 sm:px-4 md:gap-6 md:px-6 md:py-2.5">
+
+    <header className="pointer-events-none fixed left-0 top-3 z-[1000] w-full px-3 md:left-1/2 md:top-6 md:w-max md:max-w-[90vw] md:-translate-x-1/2 md:px-0">
+
+      <nav className="pointer-events-auto flex w-full items-center justify-between gap-3 rounded-full border border-white/15 bg-[rgba(11,11,10,0.68)] px-4 py-2 shadow-[0_8px_32px_rgba(0,0,0,0.3)] backdrop-blur-xl transition-all sm:px-5 md:w-max md:max-w-full md:gap-6 md:px-6 md:py-2.5">
+
+
+
+
 
         {/* Logo and brand */}
         <Link
@@ -64,9 +70,8 @@ export default function GlobalHeader() {
           <li>
             <Link
               to="/#contact"
-              className={`${desktopLink} ${
-                isHome && location.hash === '#contact' ? activeClass : ''
-              }`}
+              className={`${desktopLink} ${isHome && location.hash === '#contact' ? activeClass : ''
+                }`}
             >
               Contact
             </Link>
@@ -126,9 +131,8 @@ export default function GlobalHeader() {
               <Link
                 to="/#contact"
                 onClick={closeMenu}
-                className={`${mobileLink} ${
-                  isHome && location.hash === '#contact' ? activeClass : ''
-                }`}
+                className={`${mobileLink} ${isHome && location.hash === '#contact' ? activeClass : ''
+                  }`}
               >
                 Contact
               </Link>
