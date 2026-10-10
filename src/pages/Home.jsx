@@ -153,7 +153,7 @@ export default function Home() {
       <section className="relative border-b border-farm-border bg-farm-surface py-16 md:py-[110px]">
         <div className="mx-auto flex w-[90%] max-w-[1400px] flex-col items-center text-center">
           <span className="mb-5 inline-flex items-center gap-3 font-body text-xs uppercase tracking-[0.2em] text-farm-gold before:inline-block before:h-px before:w-6 before:bg-farm-gold">INTERACTIVE MAP & CATALOGUE</span>
-          <h2 className="font-editorial text-[clamp(2.1rem,3.5vw,3.2rem)] leading-tight text-farm-cream">Explore the Virtual Tour & Farm Map</h2>
+          <h2 className="font-editorial text-[clamp(2.1rem,3.5vw,3.2rem)] leading-tight text-farm-cream">Explore The Plant Collection</h2>
           <p className="mx-auto my-4 mb-10 max-w-[720px] text-[clamp(1.15rem,1.8vw,1.35rem)] font-light leading-relaxed text-farm-cream">
             Access the official Soans Farm spatial directory and plant catalogue.
           </p>
@@ -230,11 +230,9 @@ export default function Home() {
             </div>
 
             <div className="max-w-[440px]">
-              <span className="mb-5 block font-body text-xs uppercase tracking-[0.2em] text-farm-gold before:mr-3 before:inline-block before:h-px before:w-6 before:bg-farm-gold">The Farm Cottage</span>
-
               
 
-              <p className="mb-7 leading-[1.85] text-farm-muted">
+              <p className="text-[clamp(1.15rem,1.8vw,1.35rem)] font-light leading-relaxed text-farm-cream">
                 Experience Soans Farm beyond a day visit with a stay in
                  a cottage, surrounded by tropical plantations and the
                   natural rhythms of farm life. Enjoy a slower pace, discover 

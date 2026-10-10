@@ -86,7 +86,7 @@ export default function TheFarm() {
             body={[
               "Mechanisation and improved irrigation supported the development of cultivated land. Pineapple remained a major crop, while mango, sapota, pepper, cinnamon, nutmeg, cocoa, cashew, coconut, and vanilla broadened the farm’s agricultural output.",
               "This diversification enabled more extensive use of the land throughout the year and created additional employment opportunities for the surrounding community.",
-              "In later decades, Dr. Livingston Chandramohan (L. C.) Soans, an agricultural scientist and botanist, further developed the farm's horticultural character together with his brother Irwin V Soans. Their work introduced exotic tropical fruit species, expanded plant collections, and cultivated diverse bamboo varieties, extending the farm's legacy beyond commercial agriculture.",
+              "In later decades, Dr. Livingston Chandramohan Soans, an agricultural scientist and botanist, along with his brother Irwin V Soans a fruit technologist developed the farm's horticultural character. Their work introduced exotic tropical fruit species, expanded plant collections, and cultivated diverse bamboo varieties, extending the farm's legacy beyond commercial agriculture.",
             ]}
           />
         </div>
