@@ -10,14 +10,10 @@ import PageErrorBoundary from './components/PageErrorBoundary';
 // Page Views (11 Primary Routes)
 import Home from './pages/Home';
 import TheFarm from './pages/TheFarm';
-import TheLand from './pages/TheLand';
 import Cultivation from './pages/Cultivation';
 import BotanicalGarden from './pages/BotanicalGarden';
 import Experiences from './pages/Experiences';
-import ExploreEstate from './pages/ExploreEstate';
 import Products from './pages/Products';
-import Journal from './pages/Journal';
-import Visit from './pages/Visit';
 import EnergyHealing from './pages/EnergyHealing';
 
 function MainLayout() {
@@ -37,14 +33,10 @@ function MainLayout() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/the-farm" element={<TheFarm />} />
-            <Route path="/the-land" element={<TheLand />} />
             <Route path="/cultivation" element={<Cultivation />} />
             <Route path="/botanical-garden" element={<BotanicalGarden />} />
             <Route path="/experiences" element={<Experiences />} />
-            <Route path="/explore" element={<ExploreEstate />} />
             <Route path="/products" element={<Products />} />
-            <Route path="/journal" element={<Journal />} />
-            <Route path="/visit" element={<Visit />} />
             <Route path="/energy-healing" element={<EnergyHealing />} />
             <Route path="*" element={<NotFound />} />
           </Routes>

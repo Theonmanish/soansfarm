@@ -42,10 +42,9 @@ export default function Home() {
               subtitle="Decades of horticultural experimentation & cultivation"
             />
             <p className="text-[clamp(1.15rem,1.8vw,1.35rem)] font-light leading-relaxed text-farm-cream">
-              Soans Farm functions as a working agricultural farm, combining commercial plantations, fruit cultivation, plant collections, nursery activity, bamboo groves, and distinctive walking labyrinths.
-            </p>
+              Soans Farm functions as a working agricultural farm, combining commercial plantations, fruit cultivation, plant collections, nursery activity, bamboo groves and labyrinth. </p>
             <p className="mt-4">
-              Developed over decades, the farm brings together productive agriculture and an extensive living botanical collection in coastal Karnataka.
+              Developed over decades, the farm brings together productive agriculture and an extensive living botanical collection.
             </p>
 
 
@@ -236,9 +235,11 @@ export default function Home() {
               
 
               <p className="mb-7 leading-[1.85] text-farm-muted">
-                Experience Soans Farm from within its cultivated landscape,
-                surrounded by the quiet character of coastal Karnataka.
-                A considered setting to slow down and experience the farm                at a gentler pace.
+                Experience Soans Farm beyond a day visit with a stay in
+                 a cottage, surrounded by tropical plantations and the
+                  natural rhythms of farm life. Enjoy a slower pace, discover 
+                  the farm’s horticultural diversity, and experience the 
+                  landscape from a different perspective.
               </p>
 
 

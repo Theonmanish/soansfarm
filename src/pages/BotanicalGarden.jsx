@@ -101,7 +101,7 @@ export default function BotanicalGarden() {
           />
           <EditorialBlock
             title="Informal Botanical Study Environment"
-            lead="The estate has long welcomed student groups, agricultural learners, and visiting botanists."
+            lead="The farm has long welcomed student groups, agricultural learners, and visiting botanists."
             body={[
               "Visitors observe living plant specimens in their cultivated setting, gaining insights into multi-layer canopy dynamics, soil moisture preservation, and plant taxonomy."
             ]}

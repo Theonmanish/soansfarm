@@ -45,7 +45,7 @@ export default function Experiences() {
       num: '04',
       title: 'Educational & Academic Visits',
       subtitle: 'Agricultural Learning',
-      description: ' welcoming school and college students, agricultural learners, and travelers interested in tropical horticulture.',
+      description: 'Welcoming school and college students, agricultural learners, and travellers interested in tropical horticulture.',
       highlights: [
         'Direct crop & soil observation',
         'Multi-crop farming technique demonstrations',
@@ -62,7 +62,7 @@ export default function Experiences() {
         routeNum="05"
         title="Visitor Experiences"
         subtitle="Farm walks, botanical observations, and walking labyrinths"
-        leadText="A visit to Soans Farm offers an introduction to a working tropical agricultural farm rather than an urban botanical garden. Visitors encounter mixed plantations, fruit collections, bamboo groves, spice plantings, and walking labyrinths through farm pathways."
+        leadText="A visit to Soans Farm offers an introduction to a working tropical agricultural farm rather than an urban botanical garden. Visitors encounter mixed plantations, fruit collections, bamboo groves, inspice plantations, and walking labyrinths through farm pathways."
         metaTags={[
           { key: 'VISIT TYPE', value: 'WORKING FARM WALK & BOTANICAL STUDY' },
           { key: 'DISTINCTIVE ELEMENTS', value: 'FRENCH & CRETAN WALKING LABYRINTHS' },
@@ -91,20 +91,7 @@ export default function Experiences() {
         </div>
       </section>
 
-      {/* 02. CLOSING SECTION */}
-      <section className="relative border-b border-farm-border bg-farm-surface py-16 md:py-[110px]">
-        <div className="mx-auto w-[90%] max-w-[720px] text-center">
-          <span className="mb-5 inline-flex items-center gap-3 font-body text-xs uppercase tracking-[0.2em] text-farm-gold before:inline-block before:h-px before:w-6 before:bg-farm-gold">VISITOR GUIDELINES</span>
-          <h2>Plan Your farm Visit</h2>
-          <p className="my-4 mb-8 text-[clamp(1.15rem,1.8vw,1.35rem)] font-light leading-relaxed text-farm-cream">
-            Review practical information and location context for visiting Soans Farm in coastal Karnataka.
-          </p>
-          <Link to="/visit" className="inline-flex items-center gap-3 border border-farm-border-medium px-7 py-3.5 text-sm uppercase tracking-[0.15em] text-farm-cream transition-all hover:border-farm-gold hover:bg-farm-gold/5 hover:text-farm-gold">
-            <span>READ VISITOR INFORMATION</span>
-            <ChevronRight size={14} />
-          </Link>
-        </div>
-      </section>
+      
 
     </div>
   );

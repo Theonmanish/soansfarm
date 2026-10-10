@@ -21,21 +21,11 @@ export default function EnergyHealing() {
     <div>
       {/* Page Hero */}
       <PageHero
-        category="REFLECTION & CONTEMPLATIVE SPACES"
-        routeNum="04"
-        title="Energy & Reflection"
+        category=""
+        title="Energy Healing"
         subtitle="Ancient patterns, quiet spaces, and the practice of contemplation"
         leadText="At Soans Farm, a series of distinctive structures draws on traditions associated with sacred geometry, meditation, and the relationship between people and place. Inspired by patterns found across different cultures, these spaces offer visitors an opportunity to slow down, walk mindfully, and experience the landscape from a different perspective."
-        metaTags={[
-          {
-            key: 'CENTRAL EXPERIENCE',
-            value: 'MINDFUL WALKING & REFLECTION',
-          },
-          {
-            key: 'INFLUENCES',
-            value: 'TRADITIONAL PATTERNS & SACRED GEOMETRY',
-          },
-        ]}
+        
       />
 
       {/* 01. INTRODUCTION */}

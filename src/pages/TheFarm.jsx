@@ -21,7 +21,7 @@ export default function TheFarm() {
     <div>
       {/* Page Hero */}
       <PageHero
-        category="ESTATE IDENTITY & HERITAGE"
+        category="FARM IDENTITY & HERITAGE"
         routeNum="01"
         title="The Farm"
         subtitle="A legacy of agricultural innovation in coastal Karnataka"
@@ -51,7 +51,7 @@ export default function TheFarm() {
             title="A Living Agricultural Landscape"
             lead="Soans Farm developed as a long-term agricultural undertaking, bringing hilly terrain and previously uncultivated land into productive use."
             body={[
-              "The estate combines pineapple fields, plantation crops, tropical fruit trees, spice cultivation, bamboo varieties, and diverse plant collections within a shared agricultural landscape.",
+              "The farm combines pineapple fields, plantation crops, tropical fruit trees, spice cultivation, bamboo varieties, and diverse plant collections within a shared agricultural landscape.",
               "Its character lies in the relationship between productive farming and horticultural experimentation, where crop cultivation and the study of plant diversity have developed alongside one another over generations.",
             ]}
           />
@@ -73,7 +73,7 @@ export default function TheFarm() {
             lead="In 1926, the Basel Mission initiated an agricultural project to bring the hilly terrain and non-forested grasslands of the Moodbidri region under cultivation."
             body={[
               "The project was undertaken under the leadership of Rev. Fischer, a Basel Mission missionary based in Karkala. Alfred Soans, a young agricultural graduate of the Allahabad Agricultural Institute, joined the undertaking in 1928 to advance its agricultural development.",
-              "Early coconut cultivation struggled with shallow soil over laterite beds and limited irrigation. Through experimentation and intercropping, Alfred Soans introduced crops better suited to the land. Pineapple proved particularly important, eventually becoming the estate’s principal commercial crop.",
+              "Early coconut cultivation struggled with shallow soil over laterite beds and limited irrigation. Through experimentation and intercropping, Alfred Soans introduced crops better suited to the land. Pineapple proved particularly important, eventually becoming the farm’s principal commercial crop.",
               "The project faced further difficulties during the Second World War, when declining agricultural returns and changing political circumstances threatened its continuation. Alfred Soans persisted in his efforts to preserve the farm, eventually securing its continued management under a lease.",
             ]}
             reverse={true}
@@ -82,11 +82,11 @@ export default function TheFarm() {
           <EditorialBlock
             number="AFTER 1947 — EXPANSION & DIVERSIFICATION"
             title="Building a Diverse Agricultural Farm"
-            lead="Following India's independence, improvements in agricultural practices created opportunities for the estate to expand and diversify."
+            lead="Following India's independence, improvements in agricultural practices created opportunities for the farm to expand and diversify."
             body={[
-              "Mechanisation and improved irrigation supported the development of cultivated land. Pineapple remained a major crop, while mango, sapota, pepper, cinnamon, nutmeg, cocoa, cashew, coconut, and vanilla broadened the estate’s agricultural output.",
+              "Mechanisation and improved irrigation supported the development of cultivated land. Pineapple remained a major crop, while mango, sapota, pepper, cinnamon, nutmeg, cocoa, cashew, coconut, and vanilla broadened the farm’s agricultural output.",
               "This diversification enabled more extensive use of the land throughout the year and created additional employment opportunities for the surrounding community.",
-              "In later decades, Dr. Livingston Chandramohan (L. C.) Soans, an agricultural scientist and botanist, further developed the estate's horticultural character. His work introduced unusual tropical fruit species, expanded plant collections, and cultivated diverse bamboo varieties, extending the farm's legacy beyond commercial agriculture.",
+              "In later decades, Dr. Livingston Chandramohan (L. C.) Soans, an agricultural scientist and botanist, further developed the farm's horticultural character together with his brother Irwin V Soans. Their work introduced exotic tropical fruit species, expanded plant collections, and cultivated diverse bamboo varieties, extending the farm's legacy beyond commercial agriculture.",
             ]}
           />
         </div>

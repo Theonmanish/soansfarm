@@ -20,7 +20,6 @@ export default function GlobalFooter() {
             <ul className="m-0 flex list-none flex-col gap-3 p-0">
               <li><Link to="/" className={footerLink}>Home</Link></li>
               <li><Link to="/the-farm" className={footerLink}>The Farm & Heritage</Link></li>
-              <li><Link to="/the-land" className={footerLink}>The Land & Environment</Link></li>
               <li><Link to="/cultivation" className={footerLink}>Agricultural Cultivation</Link></li>
               <li><Link to="/botanical-garden" className={footerLink}>Botanical Collection</Link></li>
             </ul>
@@ -29,11 +28,8 @@ export default function GlobalFooter() {
             <h4 className={heading}>DISCOVER</h4>
             <ul className="m-0 flex list-none flex-col gap-3 p-0">
               <li><Link to="/experiences" className={footerLink}>Farm Experiences</Link></li>
-              <li><Link to="/explore" className={footerLink}>Explore Farm</Link></li>
-              <li><Link to="/energy-healing" className={footerLink}>Energy & Reflection</Link></li>
+              <li><Link to="/energy-healing" className={footerLink}>Energy Healing</Link></li>
               <li><Link to="/products" className={footerLink}>Farm Products</Link></li>
-              <li><Link to="/journal" className={footerLink}>Journal</Link></li>
-              <li><Link to="/visit" className={footerLink}>Visiting Information</Link></li>
               <li><Link to="/#contact" className={footerLink}>Contact</Link></li>
             </ul>
           </div>
